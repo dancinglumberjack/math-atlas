@@ -1,3 +1,4 @@
+import {primaryYears} from './primary-year.mjs';
 /* An independent Math Atlas Grade 3 study sequence. Weeks describe a flexible
    planning budget, never dates, locks, placement decisions, or mastery claims.
    Mission completion records participation, including supported practice. */
@@ -110,28 +111,31 @@ export const grade3Year = {
   ]
 };
 
-export function schoolYearForGrade(id) { return id === '3' || id === 3 ? grade3Year : null; }
+export function schoolYearForGrade(id) {
+  if(typeof id!=='string'&&typeof id!=='number')return null;
+  return String(id)==='3'?grade3Year:primaryYears.find(year=>year.gradeId===String(id))||null;
+}
 
-export function unitForMission(id) {
+export function unitForMission(id,gradeId='3') {
   if (typeof id !== 'string') return null;
-  return grade3Year.units.find(unit => unit.missionIds.includes(id)) || null;
+  return schoolYearForGrade(gradeId)?.units.find(unit => unit.missionIds.includes(id)) || null;
 }
 
 // Return only the supplied mission objects that belong to this year. References
 // are preserved, missing inventory is not invented, and the input is untouched.
-export function orderedMissions(missions) {
+export function orderedMissions(missions,gradeId='3') {
   if (!Array.isArray(missions)) return [];
   const byId = new Map();
   for (const mission of missions) if (mission && typeof mission.id === 'string' && !byId.has(mission.id)) byId.set(mission.id, mission);
-  return grade3Year.units.flatMap(unit => unit.missionIds.map(id => byId.get(id)).filter(Boolean));
+  return (schoolYearForGrade(gradeId)?.units||[]).flatMap(unit => unit.missionIds.map(id => byId.get(id)).filter(Boolean));
 }
 
-export function nextInYear(state) {
+export function nextInYear(state,gradeId='3') {
   const completed = state?.completed && typeof state.completed === 'object' && !Array.isArray(state.completed) ? state.completed : {};
   const done = id => Object.hasOwn(completed, id) && Boolean(completed[id]) && (completed[id] === true || typeof completed[id] === 'object' && !Array.isArray(completed[id]));
   const entry = (unit, missionId) => ({ missionId, unitId: unit.id, unitTitle: unit.title, sequence: unit.sequence });
-  const paused = state?.inProgress?.missionId, pausedUnit = unitForMission(paused);
+  const paused = state?.inProgress?.missionId, pausedUnit = unitForMission(paused,gradeId);
   if (pausedUnit && !done(paused)) return entry(pausedUnit, paused);
-  for (const unit of grade3Year.units) for (const missionId of unit.missionIds) if (!done(missionId)) return entry(unit, missionId);
+  for (const unit of schoolYearForGrade(gradeId)?.units||[]) for (const missionId of unit.missionIds) if (!done(missionId)) return entry(unit, missionId);
   return null;
 }

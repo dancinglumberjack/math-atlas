@@ -3,6 +3,7 @@
 import { extraMissions, extraTaskFor } from './content-expansion.mjs';
 import { adaptTask } from './division-builder.mjs';
 import { yearMissions, yearTaskFor } from './grade3-year-content.mjs';
+import { primaryMissions, primaryTaskFor } from './primary-content.mjs';
 export const ageBands = [
   { id: 'pre-k', title: 'Pre-K · Notice & play', label: 'Pre-K', description: 'Count, compare, sort, and find shape patterns. Explore together with a grown-up.', storyTone: 'Gentle play with things you can count and touch.' },
   { id: 'early', title: 'K–2 · Build the basics', label: 'K–2', description: 'Add, take away, build tens and ones, and explore clocks.', storyTone: 'Short, friendly building challenges.' },
@@ -26,7 +27,7 @@ export const missions = [
   mission('meadow-count', 'meadow', 'pre-k', 'Little collections', 'Match a small collection to its number.', 'Count objects one time each', null, 1, 4),
   mission('meadow-compare', 'meadow', 'pre-k', 'Which basket?', 'Compare two small collections.', 'More, fewer, and the same', null, 2, 4),
   mission('meadow-shapes', 'meadow', 'pre-k', 'Shape friends', 'Match circles, squares, and triangles.', 'Recognize basic shapes', null, 3, 4),
-  mission('meadow-add', 'meadow', 'early', 'Welcome to the pond', 'Combine two groups and find the total.', 'Addition within 20', null, 4, 5),
+  mission('meadow-add', 'meadow', 'early', 'Welcome to the pond', 'Combine two groups and find the total.', 'Addition within 10', null, 4, 5),
   mission('meadow-subtract', 'meadow', 'early', 'Snacks to share', 'See what remains when some objects leave.', 'Subtraction within 20', null, 5, 5),
   mission('meadow-tens', 'meadow', 'early', 'Number builders', 'Build and read tens and ones.', 'Place value to 59', null, 6, 5),
   mission('clock-hours', 'meadow', 'early', 'Clock: on the hour', 'Connect the hour hand with a whole hour.', 'Read whole-hour clocks', null, 7, 5),
@@ -50,7 +51,7 @@ export const missions = [
   mission('campus-slope', 'campus', 'college', 'A changing slope', 'Connect a tangent slope to the derivative of x².', 'Derivative of x²', 'derivatives', 22, 9),
   mission('campus-area', 'campus', 'college', 'Accumulating area', 'Connect a triangular region with an integral.', 'Integral of x on a nonnegative interval', 'integrals', 23, 9),
   mission('campus-vectors', 'campus', 'college', 'Combine directions', 'Add displacement vectors component by component.', 'Two-dimensional vector addition', 'vector-components', 27, 9)
-].concat(extraMissions,yearMissions).map((item, index) => ({ ...item, order: index + 1 }));
+].concat(extraMissions,yearMissions,primaryMissions).map((item, index) => ({ ...item, order: index + 1 }));
 
 export function missionById(id) { return missions.find(item => item.id === id) || null; }
 
@@ -125,6 +126,8 @@ function rawTaskFor(missionId, step = 0, seed = 1) {
   if (!m) throw new RangeError('Choose a known mission.');
   if (!Number.isInteger(step) || step < 0 || step > 2) throw new RangeError('A mission has three challenges, numbered 0 to 2.');
   if (!Number.isSafeInteger(seed)) throw new TypeError('The variation seed must be a safe integer.');
+  const primaryTask=primaryTaskFor(missionId,step,seed);
+  if(primaryTask)return primaryTask;
   const yearTask=yearTaskFor(missionId,step,seed);
   if(yearTask)return yearTask;
   const extension = extraTaskFor(missionId, step, seed);

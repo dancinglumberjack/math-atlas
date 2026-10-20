@@ -2,26 +2,34 @@
 
 [Open the adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html) · [Open the lesson library](https://dancinglumberjack.github.io/math-atlas/) · [Project guide](../README.md)
 
-Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 135 missions and 405 short challenges across six stages. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades. The current missions are selected explorations, not complete courses.
+Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 207 missions and 621 short challenges across six stages. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades.
 
 | Stage | Start here | How to participate |
 | --- | --- | --- |
 | Pre-K | Small collections, comparing, shapes | Point, count, and choose large picture answers; explore with a grown-up |
-| K–2 | Combining and removing objects, tens and ones, clocks | Use the visual controls and tap choices; no typed answer is required |
+| K–2 | Six connected units per grade: collections, operations, place value, measurement, data, clocks, shapes, and fair shares | Explore with a grown-up, use picture controls, and tap choices; no typed answer is required |
 | Grades 3–5 | Equal groups, fractions, arrays, area, perimeter, layers | Build a model, then connect its quantities with an answer |
 | Middle school | Ratios, unit rates, equality, equations | Predict, adjust a model, calculate, and check a fresh example |
 | High school | Lines, systems, quadratic graphs, powers, growth and decay | Connect graph features and parameters with numerical answers |
 | College explorations | Tangent slope, signed accumulation, vector operations | Investigate a specified model and connect the picture with notation |
 
-## Follow the Grade 3 journey
+## Begin with the primary years
+
+Choose **Kindergarten**, **Grade 1**, or **Grade 2**, then **all topics**, to see that grade's six connected units. Kindergarten offers 39 activities, Grade 1 offers 36, and Grade 2 offers 37. Each year suggests about 36 flexible study weeks. Start, repeat, or skip an activity as useful; the map does not lock the next grade behind a completion score.
+
+The expansion adds 24 original lessons per grade: 72 lessons and 216 challenges altogether. Young learners build collections, take objects away, make tens, compare lengths, read graph categories, move clock hands, compose shapes, and shade equal shares. Grade 2 adds five-minute clocks, a.m./p.m., whole-unit rulers, arrays, and pretend U.S. money. The [primary-years guide](primary-years.md) lists the units and examples to try together.
+
+Begin with objects or a clear picture, describe the change, and then connect it to a number sentence. The model is the answer when controls are available; otherwise tap a choice. A grown-up can read a short prompt or join the explanation. All K–2 challenge answers have a control or choice route, so learning the math does not depend on typing.
+
+## Continue the Grade 3 journey
 
 Choose **Grade 3** and **all topics** to see eight connected units containing 76 primary lessons. About 36 flexible weeks give a planning guide; pause, revisit, or start another unit whenever useful. A short mission is practice within a school year, rather than a full day's lesson. The [Grade 3 study guide](grade-3-year.md) describes the sequence, suggested methods, and everyday activities.
 
-The latest expansion adds 36 original lessons and 108 challenges. It develops place value and regrouping, multiplication and division strategies, fractions as numbers, clocks and elapsed time, measurement scales, graphs, shape families, area, and perimeter. New visual introductions bring the adventure to 67 teaching concept families.
+Grade 3 includes 36 original year-map lessons and 108 challenges added in the previous expansion. It develops place value and regrouping, multiplication and division strategies, fractions as numbers, clocks and elapsed time, measurement scales, graphs, shape families, area, and perimeter. The complete adventure now contains 91 teaching concept families.
 
 Open **Our lesson: example, ideas, and a little review** inside a mission for its goal, a useful prerequisite, a worked example, a prompt to explain the reasoning, and a review prompt. Each unit also offers earlier activities to revisit. These are suggestions, with no prerequisite tests or locked units. A topic filter still gives a shorter route to the idea being taught at school.
 
-This sequence uses Math Atlas's own unit order and original examples. The exact Curriculum Associates program and edition used at school are unknown, so the map connects familiar topics and methods without claiming matching lesson numbers or publisher endorsement.
+The connected years use Math Atlas's own unit order and original examples. They are short practice paths rather than daily school lesson plans. The exact Curriculum Associates program and edition used at school are unknown; choose by topic and method when connecting with homework. The [coverage review](coverage-review.md) distinguishes these connected journeys from the selected explorations available for higher grades.
 
 ## Meet the idea before the game
 

@@ -1,16 +1,24 @@
 # Where Math Atlas can grow
 
-Math Atlas currently offers 80 interactive lessons in nine collections. This roadmap describes useful directions, not promised releases or completed features. Feedback and small contributions help decide what comes next.
+Math Atlas currently offers 207 adventure missions and an original library of 80 interactive lessons in nine collections. This roadmap describes useful directions, not promised releases. The [coverage review](coverage-review.md) provides the current grade inventory and gaps.
 
 ## Student adventure comes first
 
-The student release adds 135 selected missions and 405 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+The student adventure has 621 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect visual reasoning with numerical answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
 
-The [Grade 3 study map](grade-3-year.md) now connects 76 primary lessons in eight units, with about 36 flexible weeks of suggested pacing. Its latest 36 original lessons add worked examples, prerequisite reminders, explanation prompts, and review across the year's main topic families. This is a practice path to use with school instruction and adult guidance, rather than a complete course or 180 daily plans. The exact Curriculum Associates school product is unknown; edition-specific lesson matching remains unverified.
+The [primary years](primary-years.md) now offer six connected units each for Kindergarten, Grade 1, and Grade 2. Seventy-two new original lessons add 216 challenges with visual controls or choices and no required typing. The [Grade 3 study map](grade-3-year.md) connects 76 lessons in eight units. Each grade suggests about 36 flexible study weeks, with worked examples, prerequisite reminders, explanation prompts, and review. These are practice paths to use with school instruction and adult guidance, rather than 180 daily lesson plans.
 
-The [open-materials guide](learning-sources.md) records four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, relevant standards, and external classroom resources. Grade 3 now has a connected sequence; deepen it through educator and learner review before extending the same care to other grades. More generated questions alone do not make a complete course.
+The [open-materials guide](learning-sources.md) records official standards references, four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, and external classroom resources. The exact Curriculum Associates school product remains unknown, so edition-specific matching needs a verified book or program reference.
 
-The next priority is to observe whether students understand the models, can use the controls independently, and can apply an idea in a different problem. Expand content and refine rewards from that feedback. Clocks, number sense, fractions, geometry, algebra, and introductory college explorations need continued student and educator review before any claim of complete curriculum coverage.
+Next, work upward from the connected early years: build Grade 4, then Grade 5, then Grades 6–8, then high-school course paths. Review existing lessons with learners and educators throughout. A new problem should add a useful representation, strategy, or application; changing a few numbers is replay practice rather than a new lesson.
+
+## Fill the next school years
+
+1. **Grades 4–5:** Connect multi-digit calculation to place-value, area, and sharing models; extend fraction operations and decimals; build measurement, angles, coordinates, and volume sequences. Grade 5 currently has the thinnest adventure coverage.
+2. **Grades 6–8:** Connect rational-number operations, ratios, equations, and functions; add geometry, statistics, probability, and longer applications. Existing missions provide useful starting pictures, but each grade needs a coherent sequence and review.
+3. **High school:** Organize Algebra I, Geometry, Algebra II, statistics, trigonometry, and precalculus by course and prerequisites. Deepen reasoning, proofs, modeling, and varied practice before extending the college sampler.
+
+For every grade, keep the progression visible: build or inspect a concrete model, describe the relationship, connect a symbol or equation, then use it in another setting. Let older students choose a quieter presentation while retaining useful models and optional interaction.
 
 Teacher dashboards, accounts, classroom assignments, shared student records, and hosted progress services are deliberately deferred while the student experience is tested. No classroom backend or voice narration is included in this release.
 

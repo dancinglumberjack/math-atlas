@@ -34,11 +34,11 @@ const examples = {
   'campus-vectors': [{ sumX: 5, sumY: 3 }, { x: 4, y: 0 }, { x: 1, y: 5 }]
 };
 
-test('the 135 authored missions connect six learner bands with valid optional lesson links', () => {
-  assert.equal(missions.length, 135);
+test('the 207 authored missions connect six learner bands with valid optional lesson links', () => {
+  assert.equal(missions.length, 207);
   assert.equal(ageBands.length, 6);
   assert.equal(new Set(missions.map(m => m.id)).size, missions.length);
-  assert.deepEqual(missions.map(m => m.order), Array.from({ length: 135 }, (_, i) => i + 1));
+  assert.deepEqual(missions.map(m => m.order), Array.from({ length: 207 }, (_, i) => i + 1));
   const curriculum = readFileSync(new URL('../src/curriculum.js', import.meta.url), 'utf8');
   for (const m of missions) {
     assert.ok(ageBands.some(band => band.id === m.bandId), m.id);

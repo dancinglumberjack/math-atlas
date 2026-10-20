@@ -1,3 +1,4 @@
+import { primaryMissions, primaryConcepts } from './primary-content.mjs';
 /* Short teaching sequences shown before practice. Examples are separate from the
    challenge targets. Seeing these cards is participation, not evidence of mastery. */
 import { extraMissions } from './content-expansion.mjs';
@@ -297,7 +298,7 @@ concepts.push(
   ],'Keep 0 ÷ 3 distinct from 3 ÷ 0. An empty total can be shared among a positive number of groups; division by zero has no defined answer here.')
 );
 
-concepts.push(...yearConcepts);
+concepts.push(...yearConcepts,...primaryConcepts);
 const extraMissionIds = {
   counting: ['meadow-small-trail', 'meadow-ten-trail'],
   zero: ['meadow-zero'], compare: ['meadow-same-number', 'meadow-fewer'],
@@ -318,7 +319,7 @@ const extraMissionIds = {
   'vector-scale': ['campus-vector-scale'], 'vector-difference': ['campus-vector-difference']
 };
 for (const concept of concepts) concept.missionIds.push(...(extraMissionIds[concept.id] || []));
-for(const mission of [...extraMissions,...yearMissions]){
+for(const mission of [...extraMissions,...yearMissions,...primaryMissions]){
   const concept=concepts.find(c=>c.id===(mission.conceptKey||mission.conceptId));
   if(concept&&!concept.missionIds.includes(mission.id))concept.missionIds.push(mission.id);
 }

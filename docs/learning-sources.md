@@ -1,12 +1,26 @@
 # Open lessons and connections to schoolwork
 
-Math Atlas has 135 authored missions and 405 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. This is a growing practice collection, not a complete grade course or independently certified standards alignment. Review can appear under more than one grade, and high-school sequences vary.
+Math Atlas has 207 authored missions and 621 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. Review can appear under more than one grade, and high-school sequences vary. The [coverage review](coverage-review.md) records where connected journeys exist and where coverage remains a set of selected explorations.
+
+## Kindergarten, Grade 1, and Grade 2
+
+The [primary-years guide](primary-years.md) describes six connected units per grade, with about 36 flexible study weeks. The latest expansion adds 72 original lessons—24 per grade—and 216 challenges. Each lesson includes a goal, a prerequisite, a worked example, an explanation prompt, and a review prompt. Answers use visual controls or choices without requiring typing. None of these 72 lessons copies a publisher's exercises, artwork, or answer keys.
+
+The sequence starts with concrete collections and pictures, then connects each action to quantities, symbols, and written methods. These official standards pages informed the topic choices:
+
+| Grade | Progression references |
+| --- | --- |
+| Kindergarten | [Introduction](https://www.thecorestandards.org/Math/Content/K/introduction/), [counting](https://www.thecorestandards.org/Math/Content/K/CC/), [operations](https://www.thecorestandards.org/Math/Content/K/OA/), [teen numbers](https://www.thecorestandards.org/Math/Content/K/NBT/), [measurement and sorting](https://www.thecorestandards.org/Math/Content/K/MD/), [geometry](https://www.thecorestandards.org/Math/Content/K/G/) |
+| Grade 1 | [Introduction](https://www.thecorestandards.org/Math/Content/1/introduction/), [operations](https://www.thecorestandards.org/Math/Content/1/OA/), [place value](https://www.thecorestandards.org/Math/Content/1/NBT/), [measurement, time, and data](https://www.thecorestandards.org/Math/Content/1/MD/), [geometry and fair shares](https://www.thecorestandards.org/Math/Content/1/G/) |
+| Grade 2 | [Introduction](https://www.thecorestandards.org/Math/Content/2/introduction/), [operations](https://www.thecorestandards.org/Math/Content/2/OA/), [base ten](https://www.thecorestandards.org/Math/Content/2/NBT/), [measurement, time, money, and data](https://www.thecorestandards.org/Math/Content/2/MD/), [geometry](https://www.thecorestandards.org/Math/Content/2/G/) |
+
+These are planning references for an independently authored practice sequence. Code-level standards labels identify a connection to review, rather than a certification that one mission covers or assesses the complete standard. The four existing IM adaptations remain the only externally adapted activities listed below.
 
 ## A connected Grade 3 study map
 
 The [Grade 3 guide](grade-3-year.md) organizes 76 primary lessons into eight units across about 36 flexible study weeks. It includes suggested prerequisites, methods, everyday activities, and planned review. These are pacing suggestions for a practice companion, rather than 180 daily lesson plans or a claim of full course coverage.
 
-The latest 36 original lessons add 108 challenges in base-ten calculation, multiplication/division strategies, fractions on number lines, time, mass and capacity, scaled graphs, line plots, shape families, area, perimeter, and mixed applications. Each includes an authored goal, prerequisite, worked example, explanation prompt, and review prompt. The new lesson text, stories, examples, and diagrams are Math Atlas originals; these 36 lessons do not import a publisher's exercises or answer keys.
+The previous Grade 3 expansion added 36 original lessons and 108 challenges in base-ten calculation, multiplication/division strategies, fractions on number lines, time, mass and capacity, scaled graphs, line plots, shape families, area, perimeter, and mixed applications. Each includes an authored goal, prerequisite, worked example, explanation prompt, and review prompt. These lesson texts, stories, examples, and diagrams are Math Atlas originals; the 36 lessons do not import a publisher's exercises or answer keys.
 
 Topic references come from the Grade 3 standards for [operations](https://www.thecorestandards.org/Math/Content/3/OA/), [base-ten calculation](https://www.thecorestandards.org/Math/Content/3/NBT/), [fractions](https://www.thecorestandards.org/Math/Content/3/NF/), [measurement and data](https://www.thecorestandards.org/Math/Content/3/MD/), and [geometry](https://www.thecorestandards.org/Math/Content/3/G/). The [first-edition IM Grade 3 scope and sequence](https://im.kendallhunt.com/k5/teachers/grade-3/course-guide/scope-and-sequence.html) was consulted as a progression reference. Math Atlas's unit wording, week budgets, review choices, and family examples are independently written. Specific activity adaptations remain credited below.
 
