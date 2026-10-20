@@ -1,4 +1,5 @@
 import {primaryYears} from './primary-year.mjs';
+import {upperYears} from './upper-year.mjs';
 /* An independent Math Atlas Grade 3 study sequence. Weeks describe a flexible
    planning budget, never dates, locks, placement decisions, or mastery claims.
    Mission completion records participation, including supported practice. */
@@ -113,7 +114,7 @@ export const grade3Year = {
 
 export function schoolYearForGrade(id) {
   if(typeof id!=='string'&&typeof id!=='number')return null;
-  return String(id)==='3'?grade3Year:primaryYears.find(year=>year.gradeId===String(id))||null;
+  return String(id)==='3'?grade3Year:[...primaryYears,...upperYears].find(year=>year.gradeId===String(id))||null;
 }
 
 export function unitForMission(id,gradeId='3') {

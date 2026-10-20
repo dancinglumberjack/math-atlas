@@ -85,7 +85,7 @@ test('prerequisite suggestions are optional foundations or earlier units, and re
 test('year lookup and ordering preserve supplied mission objects without inventing inventory', () => {
   assert.equal(schoolYearForGrade('3'), grade3Year);
   assert.equal(schoolYearForGrade(3), grade3Year);
-  for (const id of ['all', '4', null, undefined, {}, ['3']]) assert.equal(schoolYearForGrade(id), null);
+  for (const id of ['all', '6', null, undefined, {}, ['3']]) assert.equal(schoolYearForGrade(id), null);
   const first = { id: ids[0], title: 'First actual object' }, later = { id: ids[6], title: 'Later actual object' };
   const input = [later, { id: 'unmapped' }, first, { id: first.id, title: 'Duplicate' }, null];
   const before = input.slice();

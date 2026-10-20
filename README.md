@@ -2,7 +2,7 @@
 
 **Move a point. Change a number. Watch the idea make sense.**
 
-Math Atlas is a free, browser-based visual math adventure and lesson library. Students build a model, uncover the reasoning one step at a time, and try a practice check. Connected Kindergarten–Grade 3 journeys sit alongside selected explorations for older learners and the original 80-lesson library.
+Math Atlas is a free, browser-based visual math adventure and lesson library. Students build a model, uncover the reasoning one step at a time, and try a practice check. Connected Kindergarten–Grade 5 journeys sit alongside selected explorations for older learners and the original 80-lesson library.
 
 **New: [Explore the student adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html).** Choose a learning stage from Pre-K through introductory college explorations. Younger learners count, build, compare, and set clocks through game interactions; older learners connect visual models with numerical answers, equations, and graphs. Original woodland companions, gentle mission rewards, and a local pet collection make room for play. The presentation can become quieter and more mature as learners choose a different stage.
 
@@ -16,8 +16,9 @@ The public link is hosted on GitHub Pages. You can also download `index.html` an
 
 ## What students can do
 
-- **Find a grade and topic in 207 adventure missions / 621 challenges.** Visual teaching introduces unfamiliar ideas across 91 concept families. Four activities adapt credited, openly licensed first-edition Illustrative Mathematics lessons. [Sources and school connections](docs/learning-sources.md).
-- **Begin at Kindergarten and grow through Grade 3.** Kindergarten, Grade 1, and Grade 2 each have six connected units, with 39, 36, and 37 available activities respectively. The latest expansion adds 72 original lessons and 216 challenges: counting, joining and removing objects, place value, measurement, clocks, data, shapes, fair shares, and Grade 2 money. Answers use controls or choices without required typing. [See the primary-years guide](docs/primary-years.md).
+- **Find a grade and topic in 271 adventure missions / 813 challenges.** Visual teaching introduces unfamiliar ideas across 120 concept families. Four activities adapt credited, openly licensed first-edition Illustrative Mathematics lessons. [Sources and school connections](docs/learning-sources.md).
+- **Begin at Kindergarten and grow through Grade 5.** Kindergarten, Grade 1, and Grade 2 each have six connected units, with 39, 36, and 37 available activities respectively. The K–2 expansion adds 72 original lessons and 216 challenges: counting, joining and removing objects, place value, measurement, clocks, data, shapes, fair shares, and Grade 2 money. Answers use controls or choices without required typing. [See the primary-years guide](docs/primary-years.md).
+- **Continue through Grades 4–5.** Sixty-four new original lessons add 192 challenges, with eight units per grade: larger-number operations, fractions, decimals, measurement, angles, symmetry, coordinates, expressions, and volume. Grade 4 has 46 available activities and Grade 5 has 35, including familiar review. [Grades 4–5 guide](docs/upper-elementary-years.md).
 - **Continue the Grade 3 journey.** Eight units organize 76 short lessons, including multiplication and division strategies, regrouping, fractions on number lines, measurement, graphs, and geometry. Lesson notes connect a goal, a useful prerequisite, a worked example, an explanation prompt, and review. Each connected grade offers about 36 flexible study weeks. [See the Grade 3 study map](docs/grade-3-year.md).
 - **Build division instead of typing it.** Add or remove equal rows, change the share in each row, and watch the total change. Grade 3 division's numerical answers come from the model; other questions use clickable choices.
 
@@ -47,7 +48,7 @@ The isometric lessons are **scale drawings, rectangular prism volume, surface ar
 
 ## Start learning
 
-For a playful starting point, open **Adventure map**. Choose **Kindergarten**, **Grade 1**, **Grade 2**, or **Grade 3** and **all topics** for a connected journey, or choose a topic for homework practice. Grade 3 multiplication and division have one-click shortcuts. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. Open **Our lesson** for an example and prompts to explain or revisit the idea. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
+For a playful starting point, open **Adventure map**. Choose **Kindergarten**, **Grade 1**, **Grade 2**, **Grade 3**, **Grade 4**, or **Grade 5** and **all topics** for a connected journey, or choose a topic for homework practice. Grade 3 multiplication and division have one-click shortcuts. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. Open **Our lesson** for an example and prompts to explain or revisit the idea. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
 
 1. Open the library and search for a topic, or choose a collection. **Find my starting point** opens the number-sense collection; it is not a placement test.
 2. Open a lesson. Move one control at a time and describe what changed.
@@ -63,7 +64,7 @@ Read about [the learning-access design choices](docs/learning-access.md): short 
 
 This is a growing learning library, **not a complete curriculum or a certified standards-aligned course**. High school placement varies, so collections describe topics rather than assigning every lesson a fixed grade.
 
-The Kindergarten–Grade 3 journeys are practice companions with flexible pacing, rather than 180 daily lesson plans. Their unit order is independent. Connections to school topics and methods do not establish a match to a particular Curriculum Associates product or edition. The [coverage review](docs/coverage-review.md) shows current grade counts, gaps, and the next priorities: Grades 4–5, then middle school, then high school.
+The Kindergarten–Grade 5 journeys are practice companions with flexible pacing, rather than 180 daily lesson plans. Their unit order is independent. Connections to school topics and methods do not establish a match to a particular Curriculum Associates product or edition. The [coverage review](docs/coverage-review.md) shows current grade counts, gaps, and the next priorities: Grades 6–8, then high-school course paths, while deepening the earlier years.
 
 - A **Practiced** mark means one check was answered correctly. It does not certify mastery or replace a teacher's assessment.
 - The typed-equation helper accepts `ax + b = c`, with integer `a` from **1–6**, `b` from **−6–6**, and `c` from **−20–30**. For example, `3x + 4 = 16`. It is not a general symbolic solver or a photo/homework upload tool.

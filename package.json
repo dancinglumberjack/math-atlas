@@ -1,6 +1,6 @@
 {
   "name": "math-atlas",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "description": "Visual mathematics adventures, interactive lessons, and gentle student rewards from early counting to introductory college explorations.",
   "type": "module",
@@ -16,7 +16,8 @@
     "package:site": "node scripts/package-site.mjs",
     "test:adventure": "node tests/adventure-browser.mjs",
     "test:school-year": "node tests/school-year-browser.mjs",
-    "test:primary": "node tests/primary-browser.mjs"
+    "test:primary": "node tests/primary-browser.mjs",
+    "test:upper": "node tests/upper-browser.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

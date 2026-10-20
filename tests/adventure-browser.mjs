@@ -18,7 +18,7 @@ const server = createPreviewServer({ basePath: '/math-atlas/' });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = 'http://127.0.0.1:' + server.address().port + '/math-atlas/';
 const errors = [], failed = [];
-const divisionIds = new Set(missions.filter(mission => missionPlacement(mission).topicId === 'division').map(mission => mission.id));
+const divisionIds = new Set(missions.filter(mission => missionPlacement(mission).topicId === 'division'&&!/^g[45]y-/.test(mission.id)).map(mission => mission.id));
 let browser;
 
 function observe(page, prefix = '') {

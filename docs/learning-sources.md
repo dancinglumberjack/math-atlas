@@ -1,10 +1,10 @@
 # Open lessons and connections to schoolwork
 
-Math Atlas has 207 authored missions and 621 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. Review can appear under more than one grade, and high-school sequences vary. The [coverage review](coverage-review.md) records where connected journeys exist and where coverage remains a set of selected explorations.
+Math Atlas has 271 authored missions and 813 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. Review can appear under more than one grade, and high-school sequences vary. The [coverage review](coverage-review.md) records where connected journeys exist and where coverage remains a set of selected explorations.
 
 ## Kindergarten, Grade 1, and Grade 2
 
-The [primary-years guide](primary-years.md) describes six connected units per grade, with about 36 flexible study weeks. The latest expansion adds 72 original lessons—24 per grade—and 216 challenges. Each lesson includes a goal, a prerequisite, a worked example, an explanation prompt, and a review prompt. Answers use visual controls or choices without requiring typing. None of these 72 lessons copies a publisher's exercises, artwork, or answer keys.
+The [primary-years guide](primary-years.md) describes six connected units per grade, with about 36 flexible study weeks. The K–2 expansion adds 72 original lessons—24 per grade—and 216 challenges. Each lesson includes a goal, a prerequisite, a worked example, an explanation prompt, and a review prompt. Answers use visual controls or choices without requiring typing. None of these 72 lessons copies a publisher's exercises, artwork, or answer keys.
 
 The sequence starts with concrete collections and pictures, then connects each action to quantities, symbols, and written methods. These official standards pages informed the topic choices:
 
@@ -15,6 +15,12 @@ The sequence starts with concrete collections and pictures, then connects each a
 | Grade 2 | [Introduction](https://www.thecorestandards.org/Math/Content/2/introduction/), [operations](https://www.thecorestandards.org/Math/Content/2/OA/), [base ten](https://www.thecorestandards.org/Math/Content/2/NBT/), [measurement, time, money, and data](https://www.thecorestandards.org/Math/Content/2/MD/), [geometry](https://www.thecorestandards.org/Math/Content/2/G/) |
 
 These are planning references for an independently authored practice sequence. Code-level standards labels identify a connection to review, rather than a certification that one mission covers or assesses the complete standard. The four existing IM adaptations remain the only externally adapted activities listed below.
+
+## Connected Grades 4–5
+
+The [Grades 4–5 guide](upper-elementary-years.md) describes eight units and about 36 flexible study weeks per grade. Each grade adds 32 original lessons and 96 challenges. Grade 4 connects place value, multi-digit multiplication and division, factors, fractions, decimal fractions, measurement, angles, and shape properties. Grade 5 extends decimal operations, unlike-denominator fractions, fractional products, unit-fraction division, volume, coordinates, patterns, and expressions.
+
+Official planning references are the [Grade 4 overview](https://www.thecorestandards.org/Math/Content/4/introduction/), [Grade 4 fractions](https://www.thecorestandards.org/Math/Content/4/NF/), [Grade 5 overview](https://www.thecorestandards.org/Math/Content/5/introduction/), [Grade 5 fractions](https://www.thecorestandards.org/Math/Content/5/NF/), and [Grade 5 measurement and data](https://www.thecorestandards.org/Math/Content/5/MD/). New activities are independently authored; no publisher exercise sets, artwork, or answer keys were imported. These paths are practice companions with topic connections, rather than complete courses or edition-specific school pacing guides.
 
 ## A connected Grade 3 study map
 

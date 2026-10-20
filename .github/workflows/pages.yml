@@ -30,6 +30,7 @@ jobs:
       - run: npm run test:adventure
       - run: npm run test:school-year
       - run: npm run test:primary
+      - run: npm run test:upper
       # Choose Settings > Pages > Source > GitHub Actions once before publishing.
       - uses: actions/configure-pages@v5
       - run: npm run package:site

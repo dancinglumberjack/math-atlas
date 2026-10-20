@@ -1,20 +1,20 @@
 # Where Math Atlas can grow
 
-Math Atlas currently offers 207 adventure missions and an original library of 80 interactive lessons in nine collections. This roadmap describes useful directions, not promised releases. The [coverage review](coverage-review.md) provides the current grade inventory and gaps.
+Math Atlas currently offers 271 adventure missions and an original library of 80 interactive lessons in nine collections. This roadmap describes useful directions, not promised releases. The [coverage review](coverage-review.md) provides the current grade inventory and gaps.
 
 ## Student adventure comes first
 
-The student adventure has 621 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect visual reasoning with numerical answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+The student adventure has 813 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect visual reasoning with numerical answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
 
 The [primary years](primary-years.md) now offer six connected units each for Kindergarten, Grade 1, and Grade 2. Seventy-two new original lessons add 216 challenges with visual controls or choices and no required typing. The [Grade 3 study map](grade-3-year.md) connects 76 lessons in eight units. Each grade suggests about 36 flexible study weeks, with worked examples, prerequisite reminders, explanation prompts, and review. These are practice paths to use with school instruction and adult guidance, rather than 180 daily lesson plans.
 
 The [open-materials guide](learning-sources.md) records official standards references, four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, and external classroom resources. The exact Curriculum Associates school product remains unknown, so edition-specific matching needs a verified book or program reference.
 
-Next, work upward from the connected early years: build Grade 4, then Grade 5, then Grades 6–8, then high-school course paths. Review existing lessons with learners and educators throughout. A new problem should add a useful representation, strategy, or application; changing a few numbers is replay practice rather than a new lesson.
+The [Grades 4–5 study paths](upper-elementary-years.md) now add 64 original lessons and 192 challenges in eight units per grade. Next, build connected Grades 6–8, then high-school course paths. Review existing lessons with learners and educators throughout. A new problem should add a useful representation, strategy, or application; changing a few numbers is replay practice rather than a new lesson.
 
 ## Fill the next school years
 
-1. **Grades 4–5:** Connect multi-digit calculation to place-value, area, and sharing models; extend fraction operations and decimals; build measurement, angles, coordinates, and volume sequences. Grade 5 currently has the thinnest adventure coverage.
+1. **Deepen Grades 4–5:** Add more varied applications, independent written-method practice, mixed-number contexts, non-routine measurement problems, constructions, and explanations that transfer beyond a familiar model.
 2. **Grades 6–8:** Connect rational-number operations, ratios, equations, and functions; add geometry, statistics, probability, and longer applications. Existing missions provide useful starting pictures, but each grade needs a coherent sequence and review.
 3. **High school:** Organize Algebra I, Geometry, Algebra II, statistics, trigonometry, and precalculus by course and prerequisites. Deepen reasoning, proofs, modeling, and varied practice before extending the college sampler.
 

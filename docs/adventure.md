@@ -2,7 +2,7 @@
 
 [Open the adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html) · [Open the lesson library](https://dancinglumberjack.github.io/math-atlas/) · [Project guide](../README.md)
 
-Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 207 missions and 621 short challenges across six stages. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades.
+Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 271 missions and 813 short challenges across six stages. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades.
 
 | Stage | Start here | How to participate |
 | --- | --- | --- |
@@ -25,7 +25,9 @@ Begin with objects or a clear picture, describe the change, and then connect it 
 
 Choose **Grade 3** and **all topics** to see eight connected units containing 76 primary lessons. About 36 flexible weeks give a planning guide; pause, revisit, or start another unit whenever useful. A short mission is practice within a school year, rather than a full day's lesson. The [Grade 3 study guide](grade-3-year.md) describes the sequence, suggested methods, and everyday activities.
 
-Grade 3 includes 36 original year-map lessons and 108 challenges added in the previous expansion. It develops place value and regrouping, multiplication and division strategies, fractions as numbers, clocks and elapsed time, measurement scales, graphs, shape families, area, and perimeter. The complete adventure now contains 91 teaching concept families.
+Grade 3 includes 36 original year-map lessons and 108 challenges. It develops place value and regrouping, multiplication and division strategies, fractions as numbers, clocks and elapsed time, measurement scales, graphs, shape families, area, and perimeter. The complete adventure now contains 120 teaching concept families.
+
+Grades 4 and 5 each add 32 original lessons and 96 challenges in eight connected units. Choose either grade and **all topics** for the year map, or one topic for focused practice. Grade 4 has 46 available activities and Grade 5 has 35 including review. Larger-number calculation, fractions, decimals, measurement, angles, shape reasoning, coordinates, expressions, and volume connect models with written methods. See the [Grades 4–5 family guide](upper-elementary-years.md).
 
 Open **Our lesson: example, ideas, and a little review** inside a mission for its goal, a useful prerequisite, a worked example, a prompt to explain the reasoning, and a review prompt. Each unit also offers earlier activities to revisit. These are suggestions, with no prerequisite tests or locked units. A topic filter still gives a shorter route to the idea being taught at school.
 

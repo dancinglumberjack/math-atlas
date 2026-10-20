@@ -24,3 +24,4 @@ jobs:
       - run: npm run test:adventure
       - run: npm run test:school-year
       - run: npm run test:primary
+      - run: npm run test:upper

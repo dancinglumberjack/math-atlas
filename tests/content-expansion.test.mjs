@@ -83,7 +83,7 @@ const canonical = {
 
 test('72 distinct extension missions add eight per band and a 24-mission Grade 3 path', () => {
   assert.equal(extraMissions.length, 72);
-  assert.equal(missions.length, 207);
+  assert.equal(missions.length, 271);
   assert.deepEqual(Object.keys(canonical).sort(), extraMissions.map(m => m.id).sort());
   assert.deepEqual(missions.slice(27, 27 + extraMissions.length).map(m => m.id), extraMissions.map(m => m.id));
   assert.equal(new Set(extraMissions.map(m => m.id)).size, 72);
