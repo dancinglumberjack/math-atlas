@@ -20,7 +20,7 @@ test('Grade 3 meaning comes before shortcuts and keeps group units distinct',()=
 });
 
 test('every current mission has a plain-language teaching sequence before practice', () => {
-  assert.equal(concepts.length, 52);
+  assert.equal(concepts.length, 67);
   assert.equal(new Set(concepts.map(c => c.id)).size, concepts.length);
   for (const mission of missions) {
     const concept = conceptFor(mission);
@@ -28,7 +28,7 @@ test('every current mission has a plain-language teaching sequence before practi
     assert.ok(concept.bandIds.includes(mission.bandId), `${mission.id} uses appropriate concept band`);
     assert.equal(conceptFor(mission.id), concept, `${mission.id} string lookup agrees`);
   }
-  assert.equal(missions.length, 99);
+  assert.equal(missions.length, 135);
   for (const mission of extraMissions) assert.equal(conceptFor(mission.id).id, mission.conceptKey);
   for (const concept of concepts) {
     assert.ok(concept.steps.length >= 3 && concept.steps.length <= (concept.id === 'fractions' ? 6 : 4), concept.id);

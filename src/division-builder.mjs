@@ -33,8 +33,9 @@ const whole = value => Number.isInteger(value) && value >= 0 && value <= 144;
 
 export function adaptTask(mission, task) {
   const id = typeof mission === 'string' ? mission : mission?.id;
-  if (!divisionMissionIds.includes(id) || !task || task.answer?.kind !== 'number') return task;
-  const mode = representations[id]?.[task.step];
+  const explicitYearMode=typeof id==='string'&&id.startsWith('g3y-')?task?.visual?.divisionMode:null;
+  if ((!divisionMissionIds.includes(id)&&!explicitYearMode) || !task || task.answer?.kind !== 'number') return task;
+  const mode = explicitYearMode || representations[id]?.[task.step];
   if (!mode) throw new RangeError(`Division challenge ${id}:${task.step} needs an explicit representation.`);
   if (task.visual?.type !== 'array') throw new TypeError(`Division challenge ${id}:${task.step} must supply its authored array givens.`);
   const p = task.visual;

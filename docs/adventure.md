@@ -2,7 +2,7 @@
 
 [Open the adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html) · [Open the lesson library](https://dancinglumberjack.github.io/math-atlas/) · [Project guide](../README.md)
 
-Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 99 missions and 297 short challenges, including 24 new focused Grade 3 activities. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades. The current missions are selected explorations across six stages, not complete courses.
+Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 135 missions and 405 short challenges across six stages. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades. The current missions are selected explorations, not complete courses.
 
 | Stage | Start here | How to participate |
 | --- | --- | --- |
@@ -13,9 +13,19 @@ Choose a grade and topic to find schoolwork, or choose a stage by comfort and cu
 | High school | Lines, systems, quadratic graphs, powers, growth and decay | Connect graph features and parameters with numerical answers |
 | College explorations | Tangent slope, signed accumulation, vector operations | Investigate a specified model and connect the picture with notation |
 
+## Follow the Grade 3 journey
+
+Choose **Grade 3** and **all topics** to see eight connected units containing 76 primary lessons. About 36 flexible weeks give a planning guide; pause, revisit, or start another unit whenever useful. A short mission is practice within a school year, rather than a full day's lesson. The [Grade 3 study guide](grade-3-year.md) describes the sequence, suggested methods, and everyday activities.
+
+The latest expansion adds 36 original lessons and 108 challenges. It develops place value and regrouping, multiplication and division strategies, fractions as numbers, clocks and elapsed time, measurement scales, graphs, shape families, area, and perimeter. New visual introductions bring the adventure to 67 teaching concept families.
+
+Open **Our lesson: example, ideas, and a little review** inside a mission for its goal, a useful prerequisite, a worked example, a prompt to explain the reasoning, and a review prompt. Each unit also offers earlier activities to revisit. These are suggestions, with no prerequisite tests or locked units. A topic filter still gives a shorter route to the idea being taught at school.
+
+This sequence uses Math Atlas's own unit order and original examples. The exact Curriculum Associates program and edition used at school are unknown, so the map connects familiar topics and methods without claiming matching lesson numbers or publisher endorsement.
+
 ## Meet the idea before the game
 
-New concepts begin with a short visual introduction. Use **Next** at your own pace, or replay a scene. For fractions, begin with one whole, split it into equal parts, select some of them, and then connect the picture with the written fraction. A parent can guide the activity. **Show me the idea** reopens an explanation whenever it is useful. Viewing an introduction records only that it was viewed; it does not award coins or certify understanding.
+New concepts begin with a short visual introduction. Use **Next** at your own pace, or replay a scene. For fractions, begin with one whole, split it into equal parts, select some of them, and then connect the picture with the written fraction. A parent can guide the activity. **Show me the idea** reopens an explanation whenever it is useful. Teaching is silent, with no voice narration. Viewing an introduction records only that it was viewed; it does not award coins or certify understanding.
 
 See [the learning-access design notes](learning-access.md) for the everyday choices supporting focus and reading comfort.
 

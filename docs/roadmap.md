@@ -4,13 +4,15 @@ Math Atlas currently offers 80 interactive lessons in nine collections. This roa
 
 ## Student adventure comes first
 
-The student release adds 99 selected missions and 297 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+The student release adds 135 selected missions and 405 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
 
-The [open-materials guide](learning-sources.md) records four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, relevant standards, and external classroom resources. Extend this into carefully reviewed grade-by-grade units, with prerequisites and different representations, rather than treating more generated questions as a complete course.
+The [Grade 3 study map](grade-3-year.md) now connects 76 primary lessons in eight units, with about 36 flexible weeks of suggested pacing. Its latest 36 original lessons add worked examples, prerequisite reminders, explanation prompts, and review across the year's main topic families. This is a practice path to use with school instruction and adult guidance, rather than a complete course or 180 daily plans. The exact Curriculum Associates school product is unknown; edition-specific lesson matching remains unverified.
+
+The [open-materials guide](learning-sources.md) records four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, relevant standards, and external classroom resources. Grade 3 now has a connected sequence; deepen it through educator and learner review before extending the same care to other grades. More generated questions alone do not make a complete course.
 
 The next priority is to observe whether students understand the models, can use the controls independently, and can apply an idea in a different problem. Expand content and refine rewards from that feedback. Clocks, number sense, fractions, geometry, algebra, and introductory college explorations need continued student and educator review before any claim of complete curriculum coverage.
 
-Teacher dashboards, accounts, classroom assignments, shared student records, and hosted progress services are deliberately deferred while the student experience is tested. No classroom backend is included in this release.
+Teacher dashboards, accounts, classroom assignments, shared student records, and hosted progress services are deliberately deferred while the student experience is tested. No classroom backend or voice narration is included in this release.
 
 ## Help students carry an idea into a new problem
 

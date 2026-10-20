@@ -16,7 +16,8 @@ The public link is hosted on GitHub Pages. You can also download `index.html` an
 
 ## What students can do
 
-- **Find a grade and topic in 99 adventure missions / 297 challenges.** Choose separate multiplication and division paths. Grade 3 adds 24 focused activities, with introductions before unfamiliar ideas. Four activities adapt credited, openly licensed first-edition Illustrative Mathematics lessons. [Sources and school connections](docs/learning-sources.md).
+- **Find a grade and topic in 135 adventure missions / 405 challenges.** Choose separate multiplication and division paths, with visual introductions before unfamiliar ideas. Four activities adapt credited, openly licensed first-edition Illustrative Mathematics lessons. [Sources and school connections](docs/learning-sources.md).
+- **Follow a connected Grade 3 journey.** Eight units organize 76 short lessons across about 36 flexible study weeks. The latest 36 original activities add place value, regrouping, fractions on number lines, measurement, data, shape families, and mixed problems. Lesson notes connect a goal, a useful prerequisite, a worked example, an explanation prompt, and review. [See the Grade 3 study map](docs/grade-3-year.md).
 - **Build division instead of typing it.** Add or remove equal rows, change the share in each row, and watch the total change. Grade 3 division's numerical answers come from the model; other questions use clickable choices.
 
 - **Explore 80 lessons across nine collections.** Adjust controls and compare what changes with what stays the same.
@@ -45,7 +46,7 @@ The isometric lessons are **scale drawings, rectangular prism volume, surface ar
 
 ## Start learning
 
-For a playful starting point, open **Adventure map**. Choose a grade and topic, or a learning stage, then a mission. Grade 3 multiplication and division have one-click shortcuts. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
+For a playful starting point, open **Adventure map**. Choose **Grade 3** and **all topics** for the eight-unit journey, or choose a topic for homework practice. Multiplication and division have one-click shortcuts. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. In the Grade 3 journey, open **Our lesson** for an example and prompts to explain or revisit the idea. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
 
 1. Open the library and search for a topic, or choose a collection. **Find my starting point** opens the number-sense collection; it is not a placement test.
 2. Open a lesson. Move one control at a time and describe what changed.
@@ -61,6 +62,8 @@ Read about [the learning-access design choices](docs/learning-access.md): short 
 
 This is a growing learning library, **not a complete curriculum or a certified standards-aligned course**. High school placement varies, so collections describe topics rather than assigning every lesson a fixed grade.
 
+The Grade 3 journey is a practice companion with flexible pacing, rather than 180 daily lesson plans. Its unit order is independent. Connections to school topics and methods do not establish a match to a particular Curriculum Associates product or edition.
+
 - A **Practiced** mark means one check was answered correctly. It does not certify mastery or replace a teacher's assessment.
 - The typed-equation helper accepts `ax + b = c`, with integer `a` from **1–6**, `b` from **−6–6**, and `c` from **−20–30**. For example, `3x + 4 = 16`. It is not a general symbolic solver or a photo/homework upload tool.
 - Many lessons introduce a specific case of a topic. For example, fraction division starts with a unit-fraction divisor.
@@ -70,6 +73,8 @@ This is a growing learning library, **not a complete curriculum or a certified s
 ## Privacy and saved work
 
 Math Atlas has no student account, app analytics, advertising, or app backend. The lesson code runs in the browser. Progress, the saved lesson position, and reading settings use browser storage; they **do not sync** between devices, browser profiles, or site addresses. Clearing site data removes them. Private browsing or restricted storage can prevent saving, but lessons still work.
+
+Teaching cards and activities are silent. No voice narration is included.
 
 Calculator history contains the last five successful calculations in the current page and resets when the page reloads. GitHub Pages, like any web host, may receive normal connection information when someone visits the hosted site.
 

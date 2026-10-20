@@ -1,10 +1,24 @@
 # Open lessons and connections to schoolwork
 
-Math Atlas has 99 authored missions and 297 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. This is a growing practice collection, not a complete grade course or independently certified standards alignment. Review can appear under more than one grade, and high-school sequences vary.
+Math Atlas has 135 authored missions and 405 challenges, alongside its original 80-lesson visual library. Grade and topic filters help a family find the idea being taught at school. This is a growing practice collection, not a complete grade course or independently certified standards alignment. Review can appear under more than one grade, and high-school sequences vary.
+
+## A connected Grade 3 study map
+
+The [Grade 3 guide](grade-3-year.md) organizes 76 primary lessons into eight units across about 36 flexible study weeks. It includes suggested prerequisites, methods, everyday activities, and planned review. These are pacing suggestions for a practice companion, rather than 180 daily lesson plans or a claim of full course coverage.
+
+The latest 36 original lessons add 108 challenges in base-ten calculation, multiplication/division strategies, fractions on number lines, time, mass and capacity, scaled graphs, line plots, shape families, area, perimeter, and mixed applications. Each includes an authored goal, prerequisite, worked example, explanation prompt, and review prompt. The new lesson text, stories, examples, and diagrams are Math Atlas originals; these 36 lessons do not import a publisher's exercises or answer keys.
+
+Topic references come from the Grade 3 standards for [operations](https://www.thecorestandards.org/Math/Content/3/OA/), [base-ten calculation](https://www.thecorestandards.org/Math/Content/3/NBT/), [fractions](https://www.thecorestandards.org/Math/Content/3/NF/), [measurement and data](https://www.thecorestandards.org/Math/Content/3/MD/), and [geometry](https://www.thecorestandards.org/Math/Content/3/G/). The [first-edition IM Grade 3 scope and sequence](https://im.kendallhunt.com/k5/teachers/grade-3/course-guide/scope-and-sequence.html) was consulted as a progression reference. Math Atlas's unit wording, week budgets, review choices, and family examples are independently written. Specific activity adaptations remain credited below.
+
+## Connecting with Curriculum Associates schoolwork
+
+Curriculum Associates is the school publisher identified by the family; the exact product and edition are unknown. The company offers [i-Ready Classroom Mathematics](https://www.curriculumassociates.com/programs/i-ready-learning/i-ready-classroom-mathematics-2024) and [Ready Mathematics](https://www.curriculumassociates.com/programs/i-ready-learning/ready/mathematics), among other materials. The i-Ready overview describes manipulatives and learning across multiple sessions. This supports a useful conversation about methods, but does not establish that Math Atlas follows a school's book order.
+
+Choose an activity by the homework's topic, quantities, and current method. Connect the picture with the written work the teacher is using. Math Atlas's unit and lesson numbers are its own; it does not reproduce proprietary workbooks, assessments, or teacher answers, and no publisher endorsement is implied.
 
 ## Grade 3 multiplication and division
 
-The new focused collection adds twelve multiplication missions and twelve division missions. Each has three challenges, introductory visual teaching, help, and a small bounded set of replay examples. This count represents distinct authored activities; changing the numbers does not count as another lesson.
+The focused collection includes twelve multiplication missions and twelve division missions, now connected with the wider Grade 3 journey. Each has three challenges, introductory visual teaching, help, and a small bounded set of replay examples. Additional year-map lessons extend these ideas with strategies and mixed applications. Counts represent distinct authored activities; changing the numbers does not count as another lesson.
 
 Multiplication connects equal groups, arrays, repeated addition, skip-counting, reordered factors, zero and one, missing factors, split arrays, doubling, and groups of ten. Division distinguishes **how many in each share** from **how many groups**, connects inverse facts, reconstructs a missing total or divisor, uses backward jumps, and checks a quotient by multiplying. Short two-step situations come after these basic meanings.
 

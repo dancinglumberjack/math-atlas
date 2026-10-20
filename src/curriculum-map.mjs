@@ -11,7 +11,7 @@ export const topics = [
   ['counting','Counting & comparing'],['shapes','Shapes & sorting'],['patterns','Patterns'],
   ['addition','Addition'],['subtraction','Subtraction'],['place-value','Place value'],['time','Clocks & time'],
   ['multiplication','Multiplication'],['division','Division'],['fractions','Fractions'],
-  ['measurement','Area & perimeter'],['volume','Volume'],['ratios','Ratios & rates'],['percents','Percents'],
+  ['measurement','Area & perimeter'],['measuring','Mass, capacity & length'],['data','Graphs & data'],['geometry','Shapes & geometry'],['volume','Volume'],['ratios','Ratios & rates'],['percents','Percents'],
   ['integers','Signed numbers'],['equations','Equations'],['functions','Lines & functions'],
   ['quadratics','Quadratics'],['exponents','Powers & growth'],['calculus','Change & accumulation'],['vectors','Vectors']
 ].map(([id,label])=>({id,label}));

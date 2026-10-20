@@ -40,6 +40,15 @@ async function currentTask(page) {
 async function setControl(page, key, value) {
   const control = page.locator(`[data-control="${key}"]`);
   assert.equal(await control.count(), 1, 'A labeled manipulative must exist for ' + key);
+  const bounds = await control.evaluate(node => ({ min:Number(node.min), step:Number(node.step) }));
+  if (bounds.step > 0 && bounds.step < 1 && Math.abs(bounds.step * 10 - Math.round(bounds.step * 10)) > 1e-8) {
+    const steps = Math.round((Number(value) - bounds.min) / bounds.step);
+    assert.ok(Math.abs(bounds.min + steps * bounds.step - Number(value)) < 1e-8, 'The fractional target lies on a real control step');
+    await control.focus();
+    await control.press('Home');
+    for (let i = 0; i < steps; i++) await control.press('ArrowRight');
+    return;
+  }
   await control.fill(String(value));
   await control.dispatchEvent('input');
 }
@@ -83,7 +92,7 @@ async function buildDivisionAnswer(page, task, response) {
 }
 
 async function answerTask(page, task, response = task.expected) {
-  if (divisionIds.has(task.missionId) && task.answer.kind === 'number') {
+  if (task.handsOn?.type === 'division' && task.answer.kind === 'number') {
     await buildDivisionAnswer(page, task, response);
   } else if (task.answer.kind === 'choice') {
     const option = page.locator('[name="adventure-choice"]');
@@ -328,7 +337,7 @@ async function divisionBuilderRegressions(browser) {
   observe(page, 'division builders: ');
   await page.goto(base + 'adventure.html');
   await ready(page);
-  assert.equal(divisionIds.size, 13, 'All thirteen division missions share the hands-on approach');
+  assert.equal(divisionIds.size, 16, 'All sixteen division missions share the hands-on approach');
   const examples = ['picnic-share-bags','g3-div-share-plates','g3-div-box-groups','g3-div-missing-total','g3-div-one-zero'];
   let savedScreenshot = false;
   for (const id of examples) {
