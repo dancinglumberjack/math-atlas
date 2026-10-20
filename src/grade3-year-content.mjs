@@ -59,6 +59,11 @@ const fractionLine = (d, end = 0, hideEnd = false) => line(0, 2, end, 1 / d, { f
 const measure = (kind, value, max, tickStep, unit, label) => ({ type: 'measurement', kind, value, max, tickStep, unit, label, answerKeys: { value: 'measure' } });
 const frac = (parts, selected) => ({ type: 'fraction', parts, selected });
 const near = (a, b) => Math.abs(a - b) < 1e-8;
+const quarterLabel = value => {
+  const quarters = Math.round(value * 4), whole = Math.floor(quarters / 4), remainder = quarters % 4;
+  const fraction = remainder === 2 ? '1/2' : `${remainder}/4`;
+  return remainder ? (whole ? `${whole} ${fraction}` : fraction) : String(whole);
+};
 
 export function yearTaskFor(id, step = 0, seed = 1) {
   const mission = byId.get(id);
@@ -184,8 +189,8 @@ export function yearTaskFor(id, step = 0, seed = 1) {
   }
   if (id === 'g3y-line-plot' || id === 'g3y-length-plot') {
     const shift = [0, .25, .5][v], values = [1, 1.25, 1.25, 1.5, 1.75].map(n => n + shift), target = 1.25 + shift;
-    if (id === 'g3y-length-plot' && step === 0) return out({ prompt: 'Read the ribbon length to the nearest quarter inch.', instruction: 'Each small interval is one fourth of an inch.', visual: measure('length', target, 3, .25, 'in', 'Ribbon length'), expected: target, unit: 'in', hint: 'Count the quarter-inch intervals after the last whole inch.', explanation: `The ribbon measures ${target} inches.`, why: 'The ruler and a line plot use the same numerical positions.' });
-    return out({ prompt: step === 0 ? `How many ribbons measure ${target} inches?` : step === 1 ? 'How many ribbons were measured altogether?' : `How many ribbons are longer than ${1.5 + shift} inches?`, instruction: 'Each X is one measured ribbon. Its position gives its length.', visual: { type: 'data', kind: 'line-plot', values, min: 0, max: 3, tickStep: .25, unit: 'in', title: 'Ribbon lengths', answerKeys: { value: 'count' } }, expected: step === 0 ? 2 : step === 1 ? 5 : 1, unit: 'ribbons', hint: step === 0 ? 'Count stacked X marks at that one position.' : step === 1 ? 'Count every X once.' : 'Count only X marks strictly to the right of the given length.', explanation: step === 0 ? `Two X marks stand above ${target} inches, so two ribbons have that length.` : step === 1 ? 'The plot contains five X marks, so five ribbons were measured.' : 'Only one X is to the right of the specified length.', why: 'Position measures length; the number of X marks measures frequency.' });
+    if (id === 'g3y-length-plot' && step === 0) return out({ prompt: 'Read the ribbon length to the nearest quarter inch.', instruction: 'Each small interval is one fourth of an inch. You can write a fraction or mixed number, such as 2 1/2.', visual: measure('length', target, 3, .25, 'in', 'Ribbon length'), expected: target, unit: 'in', hint: 'Count the quarter-inch intervals after the last whole inch.', explanation: `The ribbon measures ${quarterLabel(target)} inches.`, why: 'The ruler and a line plot use the same numerical positions.' });
+    return out({ prompt: step === 0 ? `How many ribbons measure ${quarterLabel(target)} inches?` : step === 1 ? 'How many ribbons were measured altogether?' : `How many ribbons are longer than ${quarterLabel(1.5 + shift)} inches?`, instruction: 'Each X is one measured ribbon. Its position gives its length.', visual: { type: 'data', kind: 'line-plot', values, min: 0, max: 3, tickStep: .25, unit: 'in', title: 'Ribbon lengths', answerKeys: { value: 'count' } }, expected: step === 0 ? 2 : step === 1 ? 5 : 1, unit: 'ribbons', hint: step === 0 ? 'Count stacked X marks at that one position.' : step === 1 ? 'Count every X once.' : 'Count only X marks strictly to the right of the given length.', explanation: step === 0 ? `Two X marks stand above ${quarterLabel(target)} inches, so two ribbons have that length.` : step === 1 ? 'The plot contains five X marks, so five ribbons were measured.' : `Only one X is to the right of ${quarterLabel(1.5 + shift)} inches.`, why: 'Position measures length; the number of X marks measures frequency.' });
   }
   if (id === 'g3y-attributes' || id === 'g3y-quadrilateral-sort') {
     const square = { type: 'shapes', target: 'square', shapes: ['square'], mode: 'attributes', caption: 'A square has four equal straight sides and four right angles.' };

@@ -54,7 +54,7 @@ export const missions = [
 
 export function missionById(id) { return missions.find(item => item.id === id) || null; }
 
-// A deliberately small parser: numbers, decimals, and a single fraction; never code.
+// A deliberately small parser: numbers, decimals, fractions, and mixed numbers; never code.
 export function parseAnswer(value) {
   if (typeof value === 'number') return Number.isFinite(value) ? value : null;
   if (typeof value !== 'string' || value.length > 100) return null;
@@ -62,6 +62,13 @@ export function parseAnswer(value) {
   const decimal = '[+-]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)';
   if (new RegExp(`^${decimal}$`).test(clean)) {
     const number = Number(clean); return Number.isFinite(number) ? number : null;
+  }
+  const mixed = clean.match(/^([+-]?)(\d+)[ \t]+(\d+)[ \t]*\/[ \t]*(\d+)$/);
+  if (mixed) {
+    const whole = Number(mixed[2]), numerator = Number(mixed[3]), denominator = Number(mixed[4]);
+    if (denominator === 0 || numerator >= denominator) return null;
+    const number = (mixed[1] === '-' ? -1 : 1) * (whole + numerator / denominator);
+    return Number.isFinite(number) ? number : null;
   }
   const match = clean.match(new RegExp(`^(${decimal})\\s*/\\s*(${decimal})$`));
   if (!match || Number(match[2]) === 0) return null;

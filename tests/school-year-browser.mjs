@@ -180,6 +180,14 @@ try{
   }
   console.log('All 36 new year lessons / 108 real UI challenges passed, with prerequisites, worked examples, explanations, review prompts and mathematical diagram checks.');
 
+  await savedVariant(page,'g3y-length-plot',1);
+  await page.locator('#adventure-answer-number').fill('1 1/4');
+  assert.equal(await page.locator('#adventure-answer-number').inputValue(),'1 1/4','The learner can type the mixed fraction shown by the ruler');
+  assert.equal(Number(await page.locator('#mission-visual [data-measure-proposal]').getAttribute('data-measure-proposal')),1.25,'A typed mixed number moves the actual ruler proposal');
+  await page.locator('#adventure-check').click();
+  assert.equal(await page.locator('#adventure-next').isVisible(),true,'A correct typed mixed-number measurement passes');
+  assert.match(await page.locator('#adventure-feedback').getAttribute('class'),/correct/);
+
   // Exact third/sixth increments must remain valid after native slider events.
   for(const seed of [2,3]){
     const t=await savedVariant(page,'g3y-unit-line',seed);

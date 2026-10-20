@@ -165,3 +165,24 @@ test('invalid year dispatch fails safely', () => {
   for (const step of [-1, 3, .5]) assert.throws(() => yearTaskFor('g3y-unit-line', step), RangeError);
   for (const seed of [NaN, Infinity, 1.1, '1']) assert.throws(() => yearTaskFor('g3y-unit-line', 0, seed), TypeError);
 });
+
+test('quarter-inch tasks use the same fraction names as the ruler without requiring decimal conversion', () => {
+  const lengths = ['1 1/4', '1 1/2', '1 3/4'], thresholds = ['1 1/2', '1 3/4', '2'];
+  for (const seed of [1, 2, 3]) {
+    const count = yearTaskFor('g3y-line-plot', 0, seed), measure = yearTaskFor('g3y-length-plot', 0, seed);
+    assert.equal(count.prompt, `How many ribbons measure ${lengths[seed - 1]} inches?`);
+    assert.equal(count.explanation, `Two X marks stand above ${lengths[seed - 1]} inches, so two ribbons have that length.`);
+    assert.equal(measure.explanation, `The ribbon measures ${lengths[seed - 1]} inches.`);
+    assert.match(measure.instruction, /mixed number, such as 2 1\/2/);
+    assert.equal(checkTask(measure, lengths[seed - 1]).correct, true);
+    for (const suffix of ['line-plot', 'length-plot']) {
+      const longer = yearTaskFor('g3y-' + suffix, 2, seed);
+      assert.equal(longer.prompt, `How many ribbons are longer than ${thresholds[seed - 1]} inches?`);
+      assert.equal(longer.explanation, `Only one X is to the right of ${thresholds[seed - 1]} inches.`);
+      for (let step = 0; step < 3; step++) {
+        const task = yearTaskFor('g3y-' + suffix, step, seed);
+        assert.doesNotMatch(task.prompt + ' ' + task.explanation, /\d+\.\d+/);
+      }
+    }
+  }
+});

@@ -144,6 +144,14 @@ test('fraction parsing rejects executable expressions and non-finite values', ()
   for (const input of ['', ' ', null, undefined, true, {}, [], NaN, Infinity, 'Infinity', '1/0', '0/0', '2+2', 'Math.sqrt(4)', '1e3', '3/4/5', '<script>', '1,000', '1'.repeat(101)]) assert.equal(parseAnswer(input), null, String(input));
 });
 
+test('mixed-number parsing applies the sign to the whole quantity and rejects malformed parts', () => {
+  for (const [input, expected] of [['1 1/4', 1.25], ['-1 1/4', -1.25], ['−1 1/4', -1.25], ['+2 3 / 4', 2.75], ['0 1/2', .5], ['-0 1/4', -.25], ['3 0/4', 3], [' 2\t1/2 ', 2.5]]) assert.equal(parseAnswer(input), expected, input);
+  for (const input of ['1 1/0', '1 1/-4', '1 -1/4', '1 +1/4', '1.5 1/4', '1 1.5/4', '1 1/4.5', '1 4/4', '1 5/4', '1 1/4/2', '1 1/4+2', '1 1/4;alert(1)', '1\n1/4', '1 1/4 extra', '1 1 1/4']) assert.equal(parseAnswer(input), null, input);
+  assert.equal(checkTask(taskFor('g3y-length-plot', 0, 1), '1 1/4').correct, true);
+  assert.equal(checkTask(taskFor('g3y-length-plot', 0, 2), '1 1/2').correct, true);
+  assert.equal(checkTask(taskFor('g3y-length-plot', 0, 3), '1 3/4').correct, true);
+});
+
 test('feedback supports a next move without exposing worked solutions on incorrect attempts', () => {
   const task = taskFor('cargo-lift');
   const result = checkTask(task, 15); // Total for all three crates, not one crate.

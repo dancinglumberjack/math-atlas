@@ -27,6 +27,8 @@ This sequence uses Math Atlas's own unit order and original examples. The exact 
 
 New concepts begin with a short visual introduction. Use **Next** at your own pace, or replay a scene. For fractions, begin with one whole, split it into equal parts, select some of them, and then connect the picture with the written fraction. A parent can guide the activity. **Show me the idea** reopens an explanation whenever it is useful. Teaching is silent, with no voice narration. Viewing an introduction records only that it was viewed; it does not award coins or certify understanding.
 
+When an adventure asks for a typed fraction, equivalent forms are welcome: `1 1/4`, `5/4`, and `1.25` all name the same value. Quarter-inch questions and diagram labels use fractions so decimal conversion is not a hidden prerequisite.
+
 See [the learning-access design notes](learning-access.md) for the everyday choices supporting focus and reading comfort.
 
 The [open-materials and schoolwork guide](learning-sources.md) names the sources, relevant standards, and the four credited lesson adaptations. Original classroom links are also available from [About & help](https://dancinglumberjack.github.io/math-atlas/about.html#school-materials).
