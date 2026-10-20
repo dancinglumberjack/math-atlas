@@ -67,3 +67,20 @@ test('two open pages preserve a collection purchase and share one-time learning 
   library.completeMission('meadow-count');
   assert.equal(adventure.load().pet.coins,20+15-12+5);
 });
+test('concept introductions save as viewed without awarding coins or claiming practice', () => {
+  const storage=memory(),journey=createJourney(storage),coins=journey.load().pet.coins;
+  journey.markConceptSeen('fractions');journey.markConceptSeen('fractions');
+  const restored=createJourney(storage);
+  assert.ok(restored.load().conceptSeen.fractions);
+  assert.equal(restored.load().pet.coins,coins);
+  assert.deepEqual(restored.load().completed,{});
+  restored.reset();assert.deepEqual(restored.load().conceptSeen,{});
+});
+test('grade and topic choices survive reload alongside a paused activity',()=>{
+  const storage=memory(),journey=createJourney(storage);
+  journey.update({preferences:{gradeId:'3',topicId:'division',bandId:'elementary'},inProgress:{missionId:'meadow-count',step:1,seed:2,answers:{},manipulated:{}}});
+  const restored=createJourney(storage).load();
+  assert.equal(restored.preferences.gradeId,'3');assert.equal(restored.preferences.topicId,'division');
+  assert.equal(restored.inProgress.missionId,'meadow-count');
+  assert.equal(normalizeJourney({preferences:{gradeId:'999',topicId:'<script>'}}).preferences.gradeId,'all');
+});

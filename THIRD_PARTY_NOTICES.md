@@ -1,5 +1,16 @@
 # Third-party notices
 
+## First-edition IM K–12 Math educational adaptations
+
+Four Grade 3 activities adapt material from © 2021 Illustrative Mathematics®, under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). These educational adaptations retain CC BY 4.0 attribution and terms; the application's MIT license does not remove these notices.
+
+- [Represent Arrays with Expressions, Grade 3 Unit 1 Lesson 18](https://im.kendallhunt.com/k5/teachers/grade-3/unit-1/lesson-18/lesson.html): adapted as `g3-mul-array-stories` and `g3-mul-array-expressions`.
+- [How Many Groups?, Grade 3 Unit 4 Lesson 1](https://im.kendallhunt.com/k5/teachers/grade-3/unit-4/lesson-1/lesson.html): adapted as `g3-div-box-groups` and `g3-div-compare-methods`.
+
+Changes: simplified wording, original interactive diagrams, new examples and stories, and individual practice instead of classroom partner activities, posters, or gallery walks. Attribution, source links, license, and changes also appear in each activity's **Sources & learning notes**. No publisher logos, separately licensed photographs, or restricted teacher responses are included. Math Atlas is an independent adaptation and is not endorsed or certified by Illustrative Mathematics.
+
+The first-edition license is confirmed in the original lesson footers and [the publisher's terms, section 7.1](https://illustrativemathematics.org/terms-of-use/). Later editions can have different terms.
+
 ## Anatomy drawing toolkit
 
 Math Atlas includes files from [Anatomy](https://github.com/wheresryan22/anatomy), an isometric SVG illustration toolkit.

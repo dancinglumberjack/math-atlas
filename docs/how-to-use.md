@@ -6,6 +6,8 @@ Math Atlas works best when you make a prediction, change one thing, and explain 
 
 ## Find a useful starting point
 
+For a game-like path, open [the adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html), choose a grade, and choose a topic. The Grade 3 **Multiplication** and **Division** buttons go straight to those collections. Look at the visual introduction first, then try one activity. **Show me this idea** reopens the explanation. The [adventure guide](adventure.md) explains controls, rewards, and saved work.
+
 Search for the idea you are studying, such as **fractions**, **slope**, or **sine**. Collection filters group related lessons. **Find my starting point** opens the number-sense collection; it does not measure a student's level.
 
 Open a lesson and read its goal. **Helpful to know** names prerequisite ideas, and selected lessons link to earlier lessons you can revisit. A glossary explains selected mathematical terms.

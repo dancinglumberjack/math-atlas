@@ -1,11 +1,13 @@
 /* Authored, deterministic student challenges. These are introductory explorations,
    not a complete curriculum or a measure of mastery. All answers stay in the browser. */
+import { extraMissions, extraTaskFor } from './content-expansion.mjs';
+import { adaptTask } from './division-builder.mjs';
 export const ageBands = [
-  { id: 'pre-k', title: 'Pre-K · Notice & play', label: 'Pre-K', description: 'Small sets, comparing, and matching shapes. Explore together with a grown-up.', storyTone: 'Gentle play with things you can count and touch.' },
-  { id: 'early', title: 'K–2 · Build the basics', label: 'K–2', description: 'Add, take away, and build numbers with tens and ones.', storyTone: 'Short, friendly building challenges.' },
-  { id: 'elementary', title: 'Grades 3–5 · Make & discover', label: 'Grades 3–5', description: 'Equal groups, fractions, area, perimeter, and an introduction to volume.', storyTone: 'Make useful things and discover patterns.' },
-  { id: 'middle', title: 'Middle school · Solve & explore', label: 'Middle school', description: 'Ratios, rates, and equations through connected visual models.', storyTone: 'Design, test, and repair.' },
-  { id: 'high', title: 'High school · Design & investigate', label: 'High school', description: 'Connect quadratic equations with a model fountain.', storyTone: 'Investigations with equations, graphs, and constraints.' },
+  { id: 'pre-k', title: 'Pre-K · Notice & play', label: 'Pre-K', description: 'Count, compare, sort, and find shape patterns. Explore together with a grown-up.', storyTone: 'Gentle play with things you can count and touch.' },
+  { id: 'early', title: 'K–2 · Build the basics', label: 'K–2', description: 'Add, take away, build tens and ones, and explore clocks.', storyTone: 'Short, friendly building challenges.' },
+  { id: 'elementary', title: 'Grades 3–5 · Make & discover', label: 'Grades 3–5', description: 'Multiply, share equally, compare fractions, and explore area, perimeter, and volume.', storyTone: 'Make useful things and discover patterns.' },
+  { id: 'middle', title: 'Middle school · Solve & explore', label: 'Middle school', description: 'Signed numbers, ratios, percents, rates, and equations through visual models.', storyTone: 'Design, test, and repair.' },
+  { id: 'high', title: 'High school · Design & investigate', label: 'High school', description: 'Connect lines, systems, quadratics, powers, and exponential models with graphs.', storyTone: 'Investigations with equations, graphs, and constraints.' },
   { id: 'college', title: 'College · Introductory explorations', label: 'College', description: 'First looks at derivatives, definite integrals, and vectors. Selected explorations, not a full college course.', storyTone: 'Mathematical investigations with explicit assumptions.' }
 ];
 
@@ -47,7 +49,7 @@ export const missions = [
   mission('campus-slope', 'campus', 'college', 'A changing slope', 'Connect a tangent slope to the derivative of x².', 'Derivative of x²', 'derivatives', 22, 9),
   mission('campus-area', 'campus', 'college', 'Accumulating area', 'Connect a triangular region with an integral.', 'Integral of x on a nonnegative interval', 'integrals', 23, 9),
   mission('campus-vectors', 'campus', 'college', 'Combine directions', 'Add displacement vectors component by component.', 'Two-dimensional vector addition', 'vector-components', 27, 9)
-].map((item, index) => ({ ...item, order: index + 1 }));
+].concat(extraMissions).map((item, index) => ({ ...item, order: index + 1 }));
 
 export function missionById(id) { return missions.find(item => item.id === id) || null; }
 
@@ -110,11 +112,13 @@ function finish(m, step, seed, details) {
   return task;
 }
 
-export function taskFor(missionId, step = 0, seed = 1) {
+function rawTaskFor(missionId, step = 0, seed = 1) {
   const m = missionById(missionId);
   if (!m) throw new RangeError('Choose a known mission.');
   if (!Number.isInteger(step) || step < 0 || step > 2) throw new RangeError('A mission has three challenges, numbered 0 to 2.');
   if (!Number.isSafeInteger(seed)) throw new TypeError('The variation seed must be a safe integer.');
+  const extension = extraTaskFor(missionId, step, seed);
+  if (extension) return extension;
   const v = ((seed % 3 - 1) % 3 + 3) % 3;
   const out = details => finish(m, step, seed, details);
 
@@ -308,6 +312,10 @@ export function taskFor(missionId, step = 0, seed = 1) {
       hint: 'Keep components in order: horizontal with horizontal, vertical with vertical.', explanation: `(${x}, ${y}) + (${dx}, ${dy}) = (${x} + (${dx}), ${y} + (${dy})) = (${expected.x}, ${expected.y}).`, why: 'Vector addition combines displacements; the final vector does not encode the total distance traveled along the path.' });
   }
   throw new RangeError('This mission has no authored challenges yet.');
+}
+
+export function taskFor(missionId, step = 0, seed = 1) {
+  return adaptTask(missionById(missionId), rawTaskFor(missionId, step, seed));
 }
 
 export function checkTask(task, response) {

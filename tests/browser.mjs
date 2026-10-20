@@ -20,6 +20,9 @@ try {
   page.on('response', response => { if (response.status() >= 400) failed.push(response.status() + ' ' + response.url()); });
   await page.goto(base);
   await page.waitForFunction(() => window.MathAtlas && window.MathCalculator && window.MathReading);
+  assert.deepEqual(await page.evaluate(() => {
+    const s=MathReading.getSettings();return {font:s.font,size:s.size,line:s.line,oneStep:s.oneStep};
+  }), {font:'system',size:1.12,line:1.9,oneStep:true}, 'comfortable reading and one-step examples are defaults');
   const ids = await page.evaluate(() => MathAtlas.lessons.map(lesson => lesson.id));
   assert.equal(ids.length, 80);
   assert.equal(await page.locator('.lesson-card').count(), 80);

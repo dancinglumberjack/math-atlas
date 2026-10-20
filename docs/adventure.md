@@ -2,7 +2,7 @@
 
 [Open the adventure](https://dancinglumberjack.github.io/math-atlas/adventure.html) · [Open the lesson library](https://dancinglumberjack.github.io/math-atlas/) · [Project guide](../README.md)
 
-Choose a stage by comfort and curiosity. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades. The current missions are selected explorations across six stages, not complete courses.
+Choose a grade and topic to find schoolwork, or choose a stage by comfort and curiosity. Grade 3 has direct **Multiplication** and **Division** shortcuts. There are 99 missions and 297 short challenges, including 24 new focused Grade 3 activities. The stage is a presentation and content choice, not an assessment, age verification, or diagnosis. There are no locked grades. The current missions are selected explorations across six stages, not complete courses.
 
 | Stage | Start here | How to participate |
 | --- | --- | --- |
@@ -10,12 +10,26 @@ Choose a stage by comfort and curiosity. The stage is a presentation and content
 | K–2 | Combining and removing objects, tens and ones, clocks | Use the visual controls and tap choices; no typed answer is required |
 | Grades 3–5 | Equal groups, fractions, arrays, area, perimeter, layers | Build a model, then connect its quantities with an answer |
 | Middle school | Ratios, unit rates, equality, equations | Predict, adjust a model, calculate, and check a fresh example |
-| High school | Quadratic vertex, roots, and height | Connect graph features and parameters with numerical answers |
-| College explorations | Tangent slope, simple accumulation, vector addition | Investigate a specified model and connect the picture with notation |
+| High school | Lines, systems, quadratic graphs, powers, growth and decay | Connect graph features and parameters with numerical answers |
+| College explorations | Tangent slope, signed accumulation, vector operations | Investigate a specified model and connect the picture with notation |
+
+## Meet the idea before the game
+
+New concepts begin with a short visual introduction. Use **Next** at your own pace, or replay a scene. For fractions, begin with one whole, split it into equal parts, select some of them, and then connect the picture with the written fraction. A parent can guide the activity. **Show me the idea** reopens an explanation whenever it is useful. Viewing an introduction records only that it was viewed; it does not award coins or certify understanding.
+
+See [the learning-access design notes](learning-access.md) for the everyday choices supporting focus and reading comfort.
+
+The [open-materials and schoolwork guide](learning-sources.md) names the sources, relevant standards, and the four credited lesson adaptations. Original classroom links are also available from [About & help](https://dancinglumberjack.github.io/math-atlas/about.html#school-materials).
+
+## Build division with rows
+
+Grade 3 division activities do not require a typed numerical answer. Use **Add a row** or **Take away a row** when finding the number of groups. When finding an equal share, add or remove one item in every row together. The picture shows the row count, items in each row, and live total. Known quantities stay fixed for that question, so the experiment keeps its meaning.
+
+Compare **your build** with the required total, then check it. Some problems ask for a picture-based choice. Missing-total problems calculate the answer from the rows you built. Changing the model does not submit an answer, and a wrong check keeps the work available to adjust. Pausing saves the current build in this browser.
 
 ## The learning loop
 
-1. Pick one mission and look at its challenge.
+1. Pick one mission. Meet the idea first, then look at its challenge.
 2. Change the model. Notice what changes and what stays the same.
 3. Check your build or answer. Feedback explains the mathematical relationship.
 4. Use a hint or worked help whenever useful. Supported practice is still practice.

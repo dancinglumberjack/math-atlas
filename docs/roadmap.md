@@ -4,7 +4,9 @@ Math Atlas currently offers 80 interactive lessons in nine collections. This roa
 
 ## Student adventure comes first
 
-The student release adds selected missions across six learning stages, original woodland companions, visual challenges, and optional local rewards. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+The student release adds 99 selected missions and 297 challenges across six learning stages, original woodland companions, visual introductions, and optional local rewards. Grade/topic navigation includes focused Grade 3 multiplication and division paths. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+
+The [open-materials guide](learning-sources.md) records four first-edition Illustrative Mathematics adaptations, their CC BY 4.0 credits, relevant standards, and external classroom resources. Extend this into carefully reviewed grade-by-grade units, with prerequisites and different representations, rather than treating more generated questions as a complete course.
 
 The next priority is to observe whether students understand the models, can use the controls independently, and can apply an idea in a different problem. Expand content and refine rewards from that feedback. Clocks, number sense, fractions, geometry, algebra, and introductory college explorations need continued student and educator review before any claim of complete curriculum coverage.
 

@@ -10,18 +10,21 @@ The adventure is a growing set of selected explorations, **not a complete Pre-K-
 
 [**Open Math Atlas**](https://dancinglumberjack.github.io/math-atlas/) · [About](https://dancinglumberjack.github.io/math-atlas/about.html) · [How to use it](docs/how-to-use.md) · [Help improve it](CONTRIBUTING.md) · [Report a problem](https://github.com/dancinglumberjack/math-atlas/issues/new/choose)
 
-The public link uses GitHub Pages; it becomes available once Pages is enabled for this repository and its first deployment finishes. You can also download `index.html` and open it in a modern browser.
+The public link is hosted on GitHub Pages. You can also download `index.html` and open it in a modern browser.
 
 ![Math Atlas showing an interactive geometry lesson, adjustable measurements, and guided reasoning](assets/preview.png)
 
 ## What students can do
+
+- **Find a grade and topic in 99 adventure missions / 297 challenges.** Choose separate multiplication and division paths. Grade 3 adds 24 focused activities, with introductions before unfamiliar ideas. Four activities adapt credited, openly licensed first-edition Illustrative Mathematics lessons. [Sources and school connections](docs/learning-sources.md).
+- **Build division instead of typing it.** Add or remove equal rows, change the share in each row, and watch the total change. Grade 3 division's numerical answers come from the model; other questions use clickable choices.
 
 - **Explore 80 lessons across nine collections.** Adjust controls and compare what changes with what stays the same.
 - **See the reasoning.** Reveal worked steps, follow prerequisite links, and use a small math glossary.
 - **Practice without a timer.** Ask for a hint, try again, generate a new challenge, or reveal the reasoning.
 - **Explore solid geometry.** Six lessons include Anatomy-powered isometric models, a flat-view comparison, and an enlarged diagram. The rectangular prism can separate into unit-height layers.
 - **Calculate when useful.** A scientific calculator supports fractions, powers, roots, trigonometry, logarithms, degrees/radians, and recent calculations. A result can be copied into an active practice answer without submitting it.
-- **Adjust the reading experience.** Choose a reading or focus preset, then adjust typeface, size, spacing, page color, contrast, motion, and the reading guide. A one-step view reduces the amount of worked text on screen.
+- **Start with reading comfort.** New visits use clear sans-serif type, larger everyday text, spacious lines, and one worked step at a time. Adjust typeface, size, spacing, page color, contrast, motion, and the reading guide; extra reading and focus presets remain available.
 - **Pick up where they left off.** Practice marks, lesson position, and reading preferences are remembered in the same browser when storage is available.
 
 ### The collections
@@ -42,7 +45,7 @@ The isometric lessons are **scale drawings, rectangular prism volume, surface ar
 
 ## Start learning
 
-For a playful starting point, open **Adventure map**. Choose a learning stage, then a mission. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
+For a playful starting point, open **Adventure map**. Choose a grade and topic, or a learning stage, then a mission. Grade 3 multiplication and division have one-click shortcuts. Each mission has three challenges: explore the model, practice the idea, and use it in another setting. Hints and worked help are free. See [the adventure guide](docs/adventure.md) for interaction, progress, and companion details.
 
 1. Open the library and search for a topic, or choose a collection. **Find my starting point** opens the number-sense collection; it is not a placement test.
 2. Open a lesson. Move one control at a time and describe what changed.
@@ -51,6 +54,8 @@ For a playful starting point, open **Adventure map**. Choose a learning stage, t
 5. Open **Reading support** or **Scientific calculator** whenever helpful.
 
 See the [student, family, and teacher guide](docs/how-to-use.md) for examples, calculator notation, and troubleshooting.
+
+Read about [the learning-access design choices](docs/learning-access.md): short visual introductions, clear steps, flexible responses, predictable controls, and quieter motion options.
 
 ## Honest limits
 
@@ -86,7 +91,7 @@ npm run serve
 
 The default build and test commands use Node's built-in tools and need no `npm install`. The serve command prints the local address to open. The tests exercise lesson models, calculator behavior, and packaging; visual and assistive-technology review still matter.
 
-Edit the files in **`src/`**, rebuild, and commit the updated `index.html` and `about.html` together with the source changes. Editing only a generated file will be overwritten by the next build.
+Edit the files in **`src/`**, rebuild, and commit the updated `index.html`, `adventure.html`, and `about.html` together with the source changes. Editing only a generated file will be overwritten by the next build.
 
 To host on GitHub Pages, choose **Settings → Pages → Source → GitHub Actions**. The included Pages workflow checks and packages the site, then deploys updates pushed to `main`; it can also be started manually in **Actions**. The `.nojekyll` file keeps this a plain static site. The site address follows `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`. Lesson links use URL fragments and work under a repository subpath.
 

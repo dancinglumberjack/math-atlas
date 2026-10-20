@@ -3,13 +3,14 @@ import { createPetState, normalizePetState } from './pets-model.mjs';
 export const JOURNEY_KEY = 'math-atlas-journey-v1';
 const bands = ['pre-k', 'early', 'elementary', 'middle', 'high', 'college'];
 const themes = ['garden', 'workshop', 'studio', 'observatory'];
+const gradeIds = ['all','pre-k','k',...Array.from({length:12},(_,i)=>String(i+1)),'college'];
 const plain = value => value && typeof value === 'object' && !Array.isArray(value);
 const clone = value => JSON.parse(JSON.stringify(value));
 const bounded = (value, min, max, fallback) => Number.isFinite(Number(value)) ? Math.min(max, Math.max(min, Number(value))) : fallback;
 const validId = value => typeof value === 'string' && /^[a-z][a-z0-9-]{0,79}$/.test(value);
 
 export function initialJourney() {
-  return { version: 1, completed: {}, lessonPractice: {}, inProgress: null, preferences: { calm: false, rewards: true, theme: 'garden', bandId: 'middle' }, weeklyGoal: 3, pet: createPetState() };
+  return { version: 1, completed: {}, lessonPractice: {}, conceptSeen: {}, inProgress: null, preferences: { calm: false, rewards: true, theme: 'garden', bandId: 'middle', gradeId: 'all', topicId: 'all' }, weeklyGoal: 3, pet: createPetState() };
 }
 
 export function normalizeJourney(input) {
@@ -24,6 +25,10 @@ export function normalizeJourney(input) {
   if (plain(input.lessonPractice)) for (const [id, date] of Object.entries(input.lessonPractice).slice(0, 500)) {
     if (validId(id) && Number.isFinite(Date.parse(date))) lessonPractice[id] = new Date(date).toISOString();
   }
+  const conceptSeen = {};
+  if (plain(input.conceptSeen)) for (const [id, date] of Object.entries(input.conceptSeen).slice(0, 300)) {
+    if (validId(id) && Number.isFinite(Date.parse(date))) conceptSeen[id] = new Date(date).toISOString();
+  }
   const p = plain(input.preferences) ? input.preferences : {};
   let inProgress = null;
   if (plain(input.inProgress) && validId(input.inProgress.missionId)) {
@@ -34,7 +39,7 @@ export function normalizeJourney(input) {
     const safeManipulated = plain(manipulated) && JSON.stringify(manipulated).length < 12000 ? clone(manipulated) : {};
     inProgress = { missionId: input.inProgress.missionId, step: Math.floor(bounded(input.inProgress.step, 0, 100, 0)), seed: Math.floor(bounded(input.inProgress.seed, 1, 2147483646, 1)), answers: safeAnswers, manipulated: safeManipulated };
   }
-  return { version: 1, completed, lessonPractice, inProgress, preferences: { calm: Boolean(p.calm), rewards: p.rewards !== false, theme: themes.includes(p.theme) ? p.theme : 'garden', bandId: bands.includes(p.bandId) ? p.bandId : 'middle' }, weeklyGoal: [1, 3, 5, 7].includes(Number(input.weeklyGoal)) ? Number(input.weeklyGoal) : 3, pet: normalizePetState(input.pet) };
+  return { version: 1, completed, lessonPractice, conceptSeen, inProgress, preferences: { calm: Boolean(p.calm), rewards: p.rewards !== false, theme: themes.includes(p.theme) ? p.theme : 'garden', bandId: bands.includes(p.bandId) ? p.bandId : 'middle', gradeId: gradeIds.includes(p.gradeId)?p.gradeId:'all', topicId: validId(p.topicId)?p.topicId:'all' }, weeklyGoal: [1, 3, 5, 7].includes(Number(input.weeklyGoal)) ? Number(input.weeklyGoal) : 3, pet: normalizePetState(input.pet) };
 }
 
 export function createJourney(storage, now = () => new Date()) {
@@ -77,5 +82,11 @@ export function createJourney(storage, now = () => new Date()) {
     if (Object.hasOwn(state.lessonPractice, id)) return clone(state);
     return update({ lessonPractice: { ...state.lessonPractice, [id]: now().toISOString() }, pet: { ...state.pet, coins: state.pet.coins + 5 } });
   }
-  return Object.freeze({ load: () => refresh(false), save, update, refresh, completeMission, completePractice, storageAvailable: () => available, subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); }, reset: () => save(initialJourney()) });
+  function markConceptSeen(id) {
+    if (!validId(id)) throw new TypeError('Invalid concept');
+    refresh(false);
+    if (Object.hasOwn(state.conceptSeen,id)) return clone(state);
+    return update({conceptSeen:{...state.conceptSeen,[id]:now().toISOString()}});
+  }
+  return Object.freeze({ load: () => refresh(false), save, update, refresh, markConceptSeen, completeMission, completePractice, storageAvailable: () => available, subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); }, reset: () => save(initialJourney()) });
 }

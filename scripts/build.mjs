@@ -46,10 +46,11 @@ export function renderPage() {
   return replaceOnce(template, '</body>', `<!-- Anatomy drawing toolkit. ${vendor('LICENSE')} -->\n</body>`);
 }
 
-export function renderAdventure() {
+export function renderAdventure({ baseOnly = false } = {}) {
   let template = read('adventure.template.html');
   template = replaceOnce(template, '/*ADVENTURE_CSS*/', [read('style.css'), vendor('iso.css'), read('reading-support.css'), read('calculator.css'), read('adventure.css'), read('pets.css')].join('\n'));
-  const code = [browserModule('adventure-model.mjs', 'AtlasAdventure'), journeyModules(), read('reading-support.js'), read('calculator.js'), 'window.MathCalculator.init();', read('pets.js'), 'window.AtlasPets.init();', read('adventure.js')].join('\n');
+  const extension = baseOnly ? 'window.AtlasExtraContent=Object.freeze({extraMissions:[],extraTaskFor(){throw new RangeError("Choose a known mission.");}});' : browserModule('content-expansion.mjs', 'AtlasExtraContent');
+  const code = [extension, browserModule('division-builder.mjs','AtlasDivisionBuilder'), browserModule('adventure-model.mjs', 'AtlasAdventure', 'const {extraMissions,extraTaskFor}=window.AtlasExtraContent;const {adaptTask}=window.AtlasDivisionBuilder;'), browserModule('curriculum-map.mjs','AtlasCurriculum','const {missions}=window.AtlasAdventure;'), browserModule('concepts-model.mjs', 'AtlasConcepts','const {extraMissions}=window.AtlasExtraContent;'), journeyModules(), read('reading-support.js'), read('calculator.js'), 'window.MathCalculator.init();', read('pets.js'), 'window.AtlasPets.init();', read('adventure.js')].join('\n');
   return replaceOnce(template, '/*ADVENTURE_JS*/', safeScript(code));
 }
 
