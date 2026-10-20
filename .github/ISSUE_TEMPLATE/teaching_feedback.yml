@@ -1,0 +1,34 @@
+name: Math or teaching feedback
+description: Help make an explanation, diagram, hint, or answer clearer and more accurate.
+title: "[Teaching] "
+labels: ["teaching"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us where an idea needs a better explanation. This report is public: use an anonymous sample problem and do not include student names, school/class details, diagnoses, grades, or identifying screenshots.
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson title or link
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: The example and the confusing step
+      description: Include control values and quote the short wording or describe the diagram involved.
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: What would make it clearer or more accurate?
+      description: If you think there is a math error, show your calculation or explain the convention you are using.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional example or reference
+      description: A worked sample, teaching idea, or reliable reference helps us review the change.

@@ -1,0 +1,30 @@
+name: An idea to make it better
+description: Suggest a lesson, learning aid, or accessibility improvement.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Students, families, educators, designers, and developers are welcome. Please keep this public report anonymous; omit student names, school/class details, diagnoses, grades, and other identifying information.
+  - type: textarea
+    id: need
+    attributes:
+      label: What is difficult or missing?
+      description: Describe the learning goal or task. Name the relevant lesson if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+      description: A sample problem or sketch can help explain your idea.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: How would this help someone understand or use the lesson?
+      description: Describe what a student should be able to notice, explain, or do afterward.
+    validations:
+      required: true

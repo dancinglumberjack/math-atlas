@@ -1,0 +1,23 @@
+/* Math Atlas palette for the MIT-licensed Anatomy drawing toolkit. */
+.math-iso-svg.iso[data-theme="light"]{
+  --anatomy-paper:var(--surface,#fdfdf8);
+  --anatomy-face:#f6faee;
+  --anatomy-top:#f9fbf4;
+  --anatomy-shade-0:#c6d4c0;
+  --anatomy-shade-1:#d3decb;
+  --anatomy-shade-2:#e0e8d9;
+  --anatomy-shade-3:#eaf0e3;
+  --anatomy-lit-top:#f7fff0;
+  --anatomy-lit-shade:#d6e6c9;
+  --anatomy-hi:var(--ink,#203c31);
+  --anatomy-mid:#78936e;
+  --anatomy-lo:#a8b99e;
+  --anatomy-faint:#d0dbc7;
+  --anatomy-lit:var(--green,#21634f);
+  --anatomy-dot:#49613d;
+  --anatomy-weight:.75px;
+}
+.visual-stage>.math-iso-svg{height:100%;width:100%;overflow:hidden}
+.math-iso-svg .iso-edge[data-tone="hi"]{stroke-width:1px}
+.math-iso-svg .iso-face-text{font-size:3px}
+@media(prefers-reduced-motion:reduce){.math-iso-svg *{animation:none!important;transition:none!important}}

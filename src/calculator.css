@@ -1,0 +1,36 @@
+#calculator-dialog{width:min(540px,calc(100% - 24px));max-height:90vh;max-height:90dvh;padding:24px;overflow:auto;overscroll-behavior:contain;background:var(--bg,#f7f6ef);color:var(--ink,#203c31);border:1px solid var(--line,#d9dfd1);border-radius:12px;font-size:var(--reading-size,15px);line-height:var(--reading-line,1.65);letter-spacing:var(--reading-spacing,normal)}
+#calculator-dialog::backdrop{background:#142d257a}
+.calc-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.calc-heading h2{font:inherit;font-size:1.65em;letter-spacing:-.025em;font-weight:600;line-height:1.25;margin:4px 0 10px}
+.calc-eyebrow{font-size:.66em;letter-spacing:.14em;text-transform:uppercase;color:var(--green,#21634f);margin:0}
+.calc-close{flex:0 0 42px;min-height:42px;border:1px solid var(--line,#d9dfd1);border-radius:6px;background:var(--surface,#fdfdf8);font-size:1.15em}
+#calculator-dialog .calc-intro{font-size:.85em;line-height:inherit;margin:0 0 16px;color:var(--muted,#5d6d61)}
+.calc-angle{display:flex;flex-wrap:wrap;gap:12px;border:0;padding:0;margin:0 0 14px;font-size:.85em}
+.calc-angle legend{float:left;padding:0;margin-right:16px;font-weight:600}
+.calc-angle label{display:inline-flex;align-items:center;gap:6px;min-height:30px;cursor:pointer}
+.calc-angle input{accent-color:var(--green,#21634f);margin:0;width:16px;height:16px}
+.calc-expression-label{display:block;font-size:.8em;font-weight:600;margin-bottom:6px}
+.calc-expression{width:100%;min-width:0;min-height:50px;border:1px solid #94ae8c;border-radius:6px;background:var(--surface,#fdfdf8);color:inherit;padding:12px;font-size:1.1em;font-family:ui-monospace,Consolas,monospace;letter-spacing:normal}
+.calc-expression[aria-invalid=true]{border-color:var(--rose,#a85c53)}
+.calc-result-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:12px;padding:12px 14px;background:var(--soft,#e7eddf);border-radius:6px;min-width:0}
+.calc-result-row>span{font-size:.75em;color:var(--muted,#5d6d61)}
+.calc-result{font-size:1.65em;font-variant-numeric:tabular-nums;font-weight:600;overflow-wrap:anywhere;text-align:right;line-height:1.4}
+#calculator-dialog .calc-message{font-size:.8em;line-height:inherit;min-height:2.9em;margin:8px 0;color:var(--muted,#5d6d61);overflow-wrap:anywhere}
+.calc-expression[aria-invalid=true]~.calc-message{color:var(--rose,#a85c53)}
+.calc-keypad{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+.calc-key{min-width:0;min-height:44px;border:1px solid var(--line,#d9dfd1);border-radius:5px;background:var(--surface,#fdfdf8);font-size:.87em;color:inherit;padding:7px 2px;letter-spacing:normal;line-height:1.35}
+.calc-key:hover,.calc-history-entry:hover{background:var(--soft,#e7eddf);border-color:#94ad88}
+.calc-key-edit{background:#eeeade;color:#67462e}
+.calc-equals,.calc-use{width:100%;min-height:46px;margin-top:10px;border:1px solid var(--green,#21634f);border-radius:6px;padding:10px 12px;font-size:.94em;font-weight:600;line-height:1.5}
+.calc-equals{color:#fff;background:var(--green,#21634f)}
+.calc-equals:hover{background:#174c3b}
+.calc-use{color:var(--green,#21634f);background:var(--surface,#fdfdf8)}
+.calc-help,.calc-history{border-top:1px solid var(--line,#d9dfd1);padding-top:12px;margin-top:16px;font-size:.8em;overflow-wrap:anywhere}
+.calc-help summary,.calc-history summary{cursor:pointer;font-weight:600;padding:2px 0}
+#calculator-dialog .calc-help p,#calculator-dialog .calc-history p{font-size:1em;line-height:inherit;color:var(--muted,#5d6d61);margin:10px 0}
+.calc-history-caption{font-weight:400;color:var(--muted,#5d6d61)}
+.calc-history-list{margin:8px 0;padding:0;list-style:none;display:grid;gap:6px}
+.calc-history-entry{width:100%;text-align:left;padding:8px 10px;color:inherit;border:1px solid var(--line,#d9dfd1);border-radius:5px;background:var(--surface,#fdfdf8);font:inherit;overflow-wrap:anywhere}
+.calc-history-clear{color:var(--green,#21634f);border:0;background:transparent;padding:8px 0;font:inherit;text-decoration:underline;text-underline-offset:3px}
+#calculator-dialog button:focus-visible,#calculator-dialog input:focus-visible,#calculator-dialog summary:focus-visible{outline:3px solid var(--orange,#b3764b);outline-offset:3px}
+@media(max-width:420px){#calculator-dialog{padding:16px;width:calc(100% - 16px)}.calc-heading h2{font-size:1.4em}.calc-keypad{gap:4px}.calc-key{min-height:43px;font-size:.77em}.calc-result{font-size:1.45em}.calc-result-row{padding:10px}.calc-angle{gap:8px}.calc-angle legend{margin-right:10px}}

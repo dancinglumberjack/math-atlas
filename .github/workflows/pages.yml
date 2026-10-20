@@ -1,0 +1,48 @@
+name: Publish Math Atlas
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run build:check
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      # Choose Settings > Pages > Source > GitHub Actions once before publishing.
+      - uses: actions/configure-pages@v5
+      - run: npm run package:site
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy checked site
+        id: deployment
+        uses: actions/deploy-pages@v4
