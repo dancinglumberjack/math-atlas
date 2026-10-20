@@ -4,7 +4,7 @@
 
 Math Atlas is a free, browser-based library of interactive school math lessons. Students explore a visual model, uncover the reasoning one step at a time, and try a practice check. It spans middle school foundations through selected advanced high school topics.
 
-[**Open Math Atlas**](https://dancinglumberjack.github.io/math-atlas/) · [About](about.html) · [How to use it](docs/how-to-use.md) · [Help improve it](CONTRIBUTING.md) · [Report a problem](https://github.com/dancinglumberjack/math-atlas/issues/new/choose)
+[**Open Math Atlas**](https://dancinglumberjack.github.io/math-atlas/) · [About](https://dancinglumberjack.github.io/math-atlas/about.html) · [How to use it](docs/how-to-use.md) · [Help improve it](CONTRIBUTING.md) · [Report a problem](https://github.com/dancinglumberjack/math-atlas/issues/new/choose)
 
 The public link uses GitHub Pages; it becomes available once Pages is enabled for this repository and its first deployment finishes. You can also download `index.html` and open it in a modern browser.
 
