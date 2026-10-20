@@ -16,7 +16,7 @@ test('committed pages exactly match the portable source build', () => {
 });
 
 test('pages have no local-machine paths or external runtime dependencies', () => {
-  for (const name of ['index.html', 'about.html'].filter(name => existsSync(resolve(root, name)))) {
+  for (const name of ['index.html', 'adventure.html', 'about.html'].filter(name => existsSync(resolve(root, name)))) {
     const html = read(name);
     assert.doesNotMatch(html, /(?:file:\/\/|[A-Z]:[\\/]Users[\\/]|127\.0\.0\.1|localhost|\.codex[\\/]|codex-runtimes)/i, name);
     assert.doesNotMatch(html, /<(?:script|link|img)\b[^>]*(?:src|href)=["'](?:https?:)?\/\//i, name + ' should work without a CDN');
@@ -47,4 +47,11 @@ test('static preview supports project paths and rejects non-public files', async
     }
     assert.equal((await fetch(url, { method: 'POST' })).status, 405);
   } finally { await new Promise(resolve => server.close(resolve)); }
+});
+test('both student experiences stay quiet and expose no narration controls', () => {
+  for (const name of ['index.html','adventure.html']) {
+    const html=read(name);
+    assert.doesNotMatch(html,/SpeechSynthesisUtterance|speechSynthesis\.speak\s*\(/,name);
+    assert.doesNotMatch(html,/id=["'](?:listen-lesson|adventure-listen)["']/,name);
+  }
 });

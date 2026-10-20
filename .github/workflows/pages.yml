@@ -27,6 +27,7 @@ jobs:
       - run: npm run build:check
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+      - run: npm run test:adventure
       # Choose Settings > Pages > Source > GitHub Actions once before publishing.
       - uses: actions/configure-pages@v5
       - run: npm run package:site

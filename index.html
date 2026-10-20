@@ -200,12 +200,16 @@ body .lesson-heading h1{font-size:clamp(32px,4vw,calc(49px * var(--reading-scale
 .calc-history-clear{color:var(--green,#21634f);border:0;background:transparent;padding:8px 0;font:inherit;text-decoration:underline;text-underline-offset:3px}
 #calculator-dialog button:focus-visible,#calculator-dialog input:focus-visible,#calculator-dialog summary:focus-visible{outline:3px solid var(--orange,#b3764b);outline-offset:3px}
 @media(max-width:420px){#calculator-dialog{padding:16px;width:calc(100% - 16px)}.calc-heading h2{font-size:1.4em}.calc-keypad{gap:4px}.calc-key{min-height:43px;font-size:.77em}.calc-result{font-size:1.45em}.calc-result-row{padding:10px}.calc-angle{gap:8px}.calc-angle legend{margin-right:10px}}
+
+.topbar{height:auto;min-height:85px;padding-top:15px;padding-bottom:15px;flex-wrap:wrap}.toplinks{gap:17px;flex-wrap:wrap}.adventure-link{background:#e9efdf;padding:6px 12px!important;border-radius:20px;text-decoration:none}.library-reward-message{background:#e9efdf;border-radius:8px;padding:12px 15px;font-size:13px;color:var(--green)}.adventure-invitation{padding:24px;border:1px solid #c6d8b6;border-radius:16px;background:linear-gradient(120deg,#edf3e5,#faf5e6);display:flex;align-items:center;justify-content:space-between;gap:24px;margin:12px 0 20px}.adventure-invitation h2{font-size:25px;margin-bottom:8px}.adventure-invitation p{margin:0;color:var(--muted);font-size:13px;max-width:630px}.adventure-invitation .btn{white-space:nowrap;text-decoration:none;display:inline-block}@media(max-width:700px){.topbar{gap:8px}.toplinks{gap:8px 15px;width:100%;justify-content:flex-start}.adventure-invitation{align-items:flex-start;flex-direction:column;padding:19px;gap:16px}.toplinks .text-btn{font-size:12px}.topbar .brand{font-size:24px}}
+
+.pets-dialog{--pet-accent:#47765d;--pet-soft:#eaf0e0;width:calc(100% - 30px);max-width:1000px;padding:24px 30px;background:#fbfaf2;border:2px solid #c1cfb8;border-radius:25px;max-height:90vh;max-height:90dvh;overscroll-behavior:contain;box-shadow:0 20px 90px #203c3138}.pets-dialog::backdrop{background:#142d2585;backdrop-filter:blur(3px)}.pet-dialog-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.pet-dialog-heading h2{font-size:35px;margin:0 0 10px}.pet-kicker{font-size:10px!important;text-transform:uppercase;letter-spacing:.1em;color:var(--pet-accent)!important;font-weight:700;margin:0 0 4px!important}.pet-wallet-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 0 12px;font-size:12px;color:var(--muted)}.pet-wallet{display:inline-flex;align-items:center;gap:9px;border:1px solid #cbb37a;border-radius:30px;background:#fff2c8;color:#68532e;padding:5px 13px;font-size:14px;font-weight:750;font-variant-numeric:tabular-nums}.pet-wallet:before{content:'✦';font-size:18px;color:#987431}.pet-home{display:grid;grid-template-columns:230px 1fr;align-items:center;gap:26px;padding:0 15px 6px;background:linear-gradient(120deg,#edf1e3,#fbf7e8);border:1px solid #dbe1ce;border-radius:19px}.pet-home h3{margin-top:0;font-size:22px}.pet-home p{max-width:480px;margin-bottom:10px}.pet-buddy-svg{width:100%;height:auto;display:block;max-width:320px;margin:0 auto}.pet-character{transform-origin:160px 230px}.pet-cheer .pet-character{animation:pet-hop 420ms ease-in-out 2}.pet-main-tabs,.pet-category-tabs{display:flex;gap:7px;flex-wrap:wrap}.pet-main-tabs{padding-top:23px;border-bottom:1px solid #cfd9c4;gap:14px}.pet-main-tabs button{background:none;border:0;border-bottom:3px solid transparent;padding:9px 9px 10px;font-size:14px;font-weight:650;color:var(--muted)}.pet-main-tabs button[aria-pressed=true]{color:var(--pet-accent);border-color:var(--pet-accent)}.pet-category-tabs{margin:14px 0 18px}.pet-category-tabs button{border:1px solid #c6d3bb;padding:6px 12px;border-radius:20px;background:#fffdf6;font-size:12px}.pet-category-tabs button[aria-pressed=true]{background:var(--pet-accent);border-color:var(--pet-accent);color:white}.pet-status{min-height:0;margin:0!important;color:#2e6649!important;font-size:14px!important;line-height:1.6!important;scroll-margin-top:15px}.pet-status:not(:empty){margin:17px 0!important;padding:12px 16px;background:#eaf0e0;border-left:3px solid #7d9c6b;border-radius:0 9px 9px 0}.pet-panel-title{font-size:21px!important;margin:21px 0 8px!important;scroll-margin-top:15px}.pet-section-intro{font-size:13px!important;max-width:780px;margin-bottom:14px}.pet-item-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.pet-item-card{display:flex;flex-direction:column;align-items:flex-start;background:#fffef8;border:1px solid #d6deca;border-radius:15px;padding:13px 15px 16px;min-width:0}.pet-item-card>.pet-buddy-svg{width:142px;max-width:100%;height:142px;object-fit:contain}.pet-item-card h3{font-size:15px;margin:9px 0 5px}.pet-item-card p{font-size:12px;line-height:1.65;margin:0 0 13px}.pet-item-card>.btn{margin-top:auto;width:100%;font-size:12px;padding:9px 10px;min-height:43px}.pet-item-art{width:100%;height:142px;display:block;margin:auto}.pet-card-bottom{margin-top:auto;width:100%;display:flex;flex-direction:column;gap:8px}.pet-card-bottom .btn{width:100%;font-size:12px;padding:9px 10px;min-height:43px}.pet-price{font-size:12px!important;color:#645237!important;font-weight:650;font-variant-numeric:tabular-nums}.pet-purchase-preview{display:grid;grid-template-columns:185px 1fr;gap:22px;padding:18px;margin:20px 0;background:#fff2cf;border:1px solid #d6ba76;border-radius:17px}.pet-preview-art{align-self:center}.pet-preview-art .pet-buddy-svg{max-height:205px;width:100%;object-fit:contain}.pet-preview-art .pet-item-art{height:170px}.pet-purchase-preview h3{font-size:23px;margin:0 0 8px}.pet-purchase-preview p{font-size:13px;line-height:1.6;margin-bottom:10px}.pet-purchase-note{font-size:12px!important}.pet-confirm-actions{display:flex;flex-wrap:wrap;gap:8px}.pet-confirm-actions .btn{font-size:12px;padding:10px 12px}.pet-afford-note{font-size:12px!important;margin:9px 0 0!important}.pet-soft-note,.pet-footer-note{font-size:12px!important;color:var(--muted);line-height:1.7;margin:18px 0 0}.pet-footer-note{border-top:1px solid #d8dfcf;padding-top:17px;font-size:11px!important}.pet-snack-shop{margin-top:15px}.pet-storage-note{background:#fff2cf;border-left:3px solid #bc9651;padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px!important}.pets-dialog .btn:disabled{opacity:.62}.pets-dialog .text-btn{min-height:40px}.pet-mature{border-radius:14px}.pet-mature .pet-home{background:#f0f2e8;border-radius:10px}.pet-mature .pet-item-card{border-radius:9px}.pet-mature .pet-dialog-heading h2{font-size:30px}.pet-mature .pet-kicker{letter-spacing:.08em}.pet-calm .pet-character{animation:none!important}.pet-calm .pet-home{background:#f4f4ea}.pet-calm::backdrop{backdrop-filter:none}#pets-open,[data-open-pets]{white-space:nowrap}#pet-wallet,[data-pet-wallet]{font-variant-numeric:tabular-nums}[data-pet-buddy]{min-width:0}[data-pet-buddy] .pet-buddy-svg{max-width:200px}@keyframes pet-hop{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(-9px) rotate(-3deg)}70%{transform:translateY(-2px) rotate(2deg)}}@media(max-width:760px){.pets-dialog{padding:20px;max-height:92vh;max-height:92dvh}.pet-home{grid-template-columns:175px 1fr;gap:10px;padding:5px 10px}.pet-home h3{font-size:19px}.pet-home p{font-size:12px}.pet-item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pet-purchase-preview{grid-template-columns:145px 1fr;gap:13px;padding:14px}.pet-preview-art .pet-buddy-svg{max-height:175px}.pet-dialog-heading h2{font-size:30px}}@media(max-width:440px){.pets-dialog{padding:17px 14px;width:calc(100% - 16px);border-radius:18px}.pet-dialog-heading h2{font-size:27px}.pet-dialog-heading{gap:6px}.pet-dialog-heading .text-btn{font-size:12px;white-space:nowrap}.pet-kicker{font-size:9px!important}.pet-wallet-row{gap:7px;font-size:10px}.pet-wallet{font-size:13px}.pet-home{grid-template-columns:128px 1fr;gap:7px;padding:7px}.pet-home-copy h3{font-size:16px;line-height:1.35;margin-bottom:6px}.pet-home-copy p{font-size:11px;line-height:1.5;margin-bottom:6px}.pet-home-copy p:last-child{display:none}.pet-main-tabs{padding-top:12px;gap:7px}.pet-main-tabs button{font-size:13px;padding:8px 9px}.pet-category-tabs{gap:6px}.pet-category-tabs button{font-size:11px;padding:7px 10px}.pet-item-grid{gap:9px}.pet-item-card{padding:10px;border-radius:11px}.pet-item-card>.pet-buddy-svg,.pet-item-art{height:120px}.pet-item-card h3{font-size:14px}.pet-item-card p{font-size:11px}.pet-item-card .btn,.pet-card-bottom .btn{font-size:11px;padding:9px 6px;line-height:1.4;min-height:43px;white-space:normal}.pet-purchase-preview{grid-template-columns:100px 1fr;gap:10px;padding:12px}.pet-preview-art .pet-item-art{height:120px}.pet-purchase-preview h3{font-size:19px}.pet-purchase-preview p{font-size:12px}.pet-confirm-actions{grid-column:1/-1}.pet-confirm-actions .btn{width:100%;font-size:11px}.pet-panel-title{font-size:19px!important}.pet-section-intro{font-size:12px!important}}@media(prefers-reduced-motion:reduce){.pet-character{animation:none!important}.pets-dialog::backdrop{backdrop-filter:none}}
 </style></head><body>
-<header class="topbar"><a class="brand" href="#library" aria-label="Math Atlas home"><span class="brand-mark" aria-hidden="true">∑</span>math<span class="brand-light">atlas</span></a><div class="toplinks"><button id="calculator-open" class="text-btn" aria-haspopup="dialog">Scientific calculator</button><button id="reading-open" class="text-btn" aria-haspopup="dialog">Reading support</button><button id="coverage-open" class="text-btn">Library coverage</button><a href="about.html" class="text-btn">About & help</a></div></header>
+<header class="topbar"><a class="brand" href="#library" aria-label="Math Atlas home"><span class="brand-mark" aria-hidden="true">∑</span>math<span class="brand-light">atlas</span></a><div class="toplinks"><a href="adventure.html" class="text-btn adventure-link">Adventure map</a><button id="pets-open" class="text-btn" aria-haspopup="dialog">My collection<span id="library-coins"></span></button><button id="calculator-open" class="text-btn" aria-haspopup="dialog">Scientific calculator</button><button id="reading-open" class="text-btn" aria-haspopup="dialog">Reading support</button><button id="coverage-open" class="text-btn">Library coverage</button><a href="about.html" class="text-btn">About & help</a></div></header>
 <main>
 <section id="library-view"><div class="hero"><div><p class="eyebrow">A visual path through mathematics</p><h1>Less memorizing.<br>More <em>“I see it.”</em></h1><p class="hero-copy">Move a point. Change a number. Watch the idea unfold.<br>Explore middle school foundations through advanced high school math.</p><div class="hero-actions"><button class="btn primary" id="start-learning">Find my starting point <span aria-hidden="true">↗</span></button><button class="text-btn" id="resume-learning" hidden>Continue learning →</button></div></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 400 290"><defs><pattern id="hero-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#dbe2d6" stroke-width="1"/></pattern></defs><rect x="15" y="12" width="370" height="260" fill="url(#hero-grid)"/><path d="M25 220H375M90 268V20" stroke="#8f9f8b" stroke-width="1.5"/><path d="M45 205Q115 240 185 125T355 65" fill="none" stroke="#21634f" stroke-width="4"/><circle cx="185" cy="125" r="9" fill="#f8f6ef" stroke="#21634f" stroke-width="3"/><path d="M185 220V125H90" fill="none" stroke="#b0764e" stroke-dasharray="5 5"/><path d="M245 215L320 215L320 140Z" fill="#dfe9d5" stroke="#819d79" stroke-width="2"/><rect x="315" y="210" width="5" height="5" fill="none" stroke="#819d79"/><text x="203" y="117" fill="#21634f" font-family="Georgia,serif" font-size="23">what if?</text><text x="113" y="258" fill="#64745e" font-family="monospace" font-size="12">one change → a new understanding</text></svg></div></div>
-<div class="library-stats" id="library-stats"></div><form class="problem-entry" id="problem-form"><div><h3>Have an equation from school?</h3><p>Type ax + b = c and explore the steps. For other topics, choose a lesson below and adjust its controls.</p></div><div><label for="problem-input" class="sr-only">Your equation</label><div class="problem-input-row"><input id="problem-input" placeholder="3x + 4 = 16" autocomplete="off" spellcheck="false"><button class="btn" type="submit">Help me solve it →</button></div><p id="problem-feedback" class="problem-feedback" role="alert"></p><span class="subtle">Whole-number a from 1–6, b from −6–6, and c from −20–30.</span></div></form><section class="catalog" aria-labelledby="catalog-title"><div class="catalog-heading"><div><p class="eyebrow">Choose your next idea</p><h2 id="catalog-title">Your math, at your pace.</h2></div><label class="search"><span class="sr-only">Search lessons</span><input id="search" type="search" placeholder="Search fractions, slope, sine…" autocomplete="off"><span aria-hidden="true">⌕</span></label></div><div id="course-filters" class="course-filters" aria-label="Filter by course"></div><div class="catalog-meta"><span id="result-count" aria-live="polite"></span><label class="small-check"><input type="checkbox" id="hide-completed"> Hide practiced lessons</label></div><div id="lesson-grid" class="lesson-grid"></div><div id="empty-state" hidden><h3>No matching lessons yet.</h3><p>Try a broader term or choose another course.</p><button class="btn" id="clear-filters">Clear filters</button></div></section><div class="coverage-note"><strong>A growing learning library.</strong> Every listed lesson has a working visual, guided reasoning, and a practice check. This first edition explores major topics; it is not a complete standards-aligned course or a replacement for teacher-led instruction. <button class="text-btn" id="coverage-inline">See coverage and next steps →</button></div></section>
-<section id="lesson-view" hidden><div class="lesson-top"><a href="#library" class="back-link">← All lessons</a><div class="lesson-nav"><button class="text-btn" id="previous-lesson">← Previous</button><button class="text-btn" id="next-lesson">Next lesson →</button></div></div><div class="lesson-heading"><div><p id="lesson-course" class="eyebrow"></p><h1 id="lesson-title"></h1><p id="lesson-goal"></p></div><span class="status-pill" id="lesson-status">Ready to explore</span></div><div class="lesson-tools"><button type="button" class="text-btn" id="listen-lesson" aria-pressed="false">Listen to this step</button><button type="button" class="text-btn" id="lesson-reading-open" aria-haspopup="dialog">Adjust reading</button><span class="subtle" id="listen-status">Uses your browser’s available voices.</span></div><div class="learning-grid"><div class="exploration"><div class="visual-frame"><div class="visual-top"><span class="eyebrow">Explore the idea</span><div class="visual-actions"><button type="button" class="text-btn" id="visual-expand">Enlarge diagram</button><button class="text-btn" id="reset-controls">Reset</button></div></div><div id="visual-options" class="visual-options" hidden><div class="visual-switch" aria-label="Diagram view"><button type="button" id="view-flat" aria-pressed="false">Flat view</button><button type="button" id="view-isometric" aria-pressed="true">Isometric view</button></div><label class="separate-layers" id="separate-layers-label" hidden><input type="checkbox" id="separate-layers"> Separate layers</label></div><div id="visual-stage" class="visual-stage"></div><div class="visual-caption" id="visual-caption"></div></div><div id="sliders" class="sliders"></div><div class="result-strip"><span id="result-label">The relationship</span><strong id="result-equation"></strong></div><div class="learning-note" id="learning-note"></div></div><div class="teaching"><div class="mode-tabs" role="tablist" aria-label="Learning activity"><button id="mode-understand" role="tab" aria-selected="true" aria-controls="understand-panel">Understand</button><button id="mode-practice" role="tab" aria-selected="false" aria-controls="practice-panel" tabindex="-1">Try it yourself</button></div><section id="understand-panel" role="tabpanel" aria-labelledby="mode-understand"><h2 id="explain-title">Why it works</h2><p id="lesson-why"></p><div class="worked-heading"><h3>Work through this example</h3><span id="step-count"></span></div><ol id="worked-steps" class="worked-steps" aria-live="polite"></ol><button type="button" class="text-btn step-back" id="step-back" hidden>← Previous step</button><button class="btn primary" id="reveal-step">Show the next step</button><button class="text-btn" id="reveal-all">Show all steps</button><div class="prerequisite"><span class="eyebrow">Helpful to know</span><p id="prerequisite-text"></p><div id="prerequisite-links" class="support-bridge"></div><details class="math-glossary"><summary>Quick math words</summary><dl id="math-glossary"></dl></details></div></section><section id="practice-panel" role="tabpanel" aria-labelledby="mode-practice" hidden><p class="eyebrow">Your turn</p><h2 id="practice-question"></h2><p class="subtle" id="practice-guidance">Use the visual to reason it out. Enter a decimal if needed.</p><button type="button" class="text-btn" id="practice-calculator-open" aria-haspopup="dialog">Open scientific calculator ↗</button><form id="answer-form"><label for="answer-input" id="answer-label">Your answer</label><div class="answer-row"><input id="answer-input" type="text" inputmode="decimal" autocomplete="off" spellcheck="false"><button type="submit" class="btn primary">Check</button></div></form><div id="answer-feedback" class="answer-feedback" aria-live="polite" aria-atomic="true"></div><button class="text-btn" id="show-hint" aria-expanded="false" aria-controls="practice-hint">Give me a hint</button><p class="hint" id="practice-hint" hidden></p><div class="practice-actions"><button class="btn" id="new-problem">New challenge ↻</button><button class="text-btn" id="show-practice-solution">See the reasoning</button></div><div class="subtle progress-explanation">“Practiced” means you answered one check correctly here. It does not certify mastery.</div></section></div></div><div class="lesson-bottom"><p>Changing a control updates the model, explanation, and practice together.</p><button class="text-btn" id="next-bottom">Explore another idea →</button></div></section>
+<aside class="adventure-invitation"><div><h2>A little adventure. A new way to see math.</h2><p>Play with blocks, set a clock, grow a ratio garden, or investigate a graph. Choose a learning stage from Pre-K to introductory college explorations, and earn companions along the way.</p></div><a class="btn primary" href="adventure.html">Choose your adventure →</a></aside><div class="library-stats" id="library-stats"></div><form class="problem-entry" id="problem-form"><div><h3>Have an equation from school?</h3><p>Type ax + b = c and explore the steps. For other topics, choose a lesson below and adjust its controls.</p></div><div><label for="problem-input" class="sr-only">Your equation</label><div class="problem-input-row"><input id="problem-input" placeholder="3x + 4 = 16" autocomplete="off" spellcheck="false"><button class="btn" type="submit">Help me solve it →</button></div><p id="problem-feedback" class="problem-feedback" role="alert"></p><span class="subtle">Whole-number a from 1–6, b from −6–6, and c from −20–30.</span></div></form><section class="catalog" aria-labelledby="catalog-title"><div class="catalog-heading"><div><p class="eyebrow">Choose your next idea</p><h2 id="catalog-title">Your math, at your pace.</h2></div><label class="search"><span class="sr-only">Search lessons</span><input id="search" type="search" placeholder="Search fractions, slope, sine…" autocomplete="off"><span aria-hidden="true">⌕</span></label></div><div id="course-filters" class="course-filters" aria-label="Filter by course"></div><div class="catalog-meta"><span id="result-count" aria-live="polite"></span><label class="small-check"><input type="checkbox" id="hide-completed"> Hide practiced lessons</label></div><div id="lesson-grid" class="lesson-grid"></div><div id="empty-state" hidden><h3>No matching lessons yet.</h3><p>Try a broader term or choose another course.</p><button class="btn" id="clear-filters">Clear filters</button></div></section><div class="coverage-note"><strong>A growing learning library.</strong> Every listed lesson has a working visual, guided reasoning, and a practice check. This first edition explores major topics; it is not a complete standards-aligned course or a replacement for teacher-led instruction. <button class="text-btn" id="coverage-inline">See coverage and next steps →</button></div></section>
+<section id="lesson-view" hidden><div class="lesson-top"><a href="#library" class="back-link">← All lessons</a><div class="lesson-nav"><button class="text-btn" id="previous-lesson">← Previous</button><button class="text-btn" id="next-lesson">Next lesson →</button></div></div><div class="lesson-heading"><div><p id="lesson-course" class="eyebrow"></p><h1 id="lesson-title"></h1><p id="lesson-goal"></p></div><span class="status-pill" id="lesson-status">Ready to explore</span></div><div class="lesson-tools"><button type="button" class="text-btn" id="lesson-reading-open" aria-haspopup="dialog">Adjust reading</button></div><div class="learning-grid"><div class="exploration"><div class="visual-frame"><div class="visual-top"><span class="eyebrow">Explore the idea</span><div class="visual-actions"><button type="button" class="text-btn" id="visual-expand">Enlarge diagram</button><button class="text-btn" id="reset-controls">Reset</button></div></div><div id="visual-options" class="visual-options" hidden><div class="visual-switch" aria-label="Diagram view"><button type="button" id="view-flat" aria-pressed="false">Flat view</button><button type="button" id="view-isometric" aria-pressed="true">Isometric view</button></div><label class="separate-layers" id="separate-layers-label" hidden><input type="checkbox" id="separate-layers"> Separate layers</label></div><div id="visual-stage" class="visual-stage"></div><div class="visual-caption" id="visual-caption"></div></div><div id="sliders" class="sliders"></div><div class="result-strip"><span id="result-label">The relationship</span><strong id="result-equation"></strong></div><div class="learning-note" id="learning-note"></div></div><div class="teaching"><div class="mode-tabs" role="tablist" aria-label="Learning activity"><button id="mode-understand" role="tab" aria-selected="true" aria-controls="understand-panel">Understand</button><button id="mode-practice" role="tab" aria-selected="false" aria-controls="practice-panel" tabindex="-1">Try it yourself</button></div><section id="understand-panel" role="tabpanel" aria-labelledby="mode-understand"><h2 id="explain-title">Why it works</h2><p id="lesson-why"></p><div class="worked-heading"><h3>Work through this example</h3><span id="step-count"></span></div><ol id="worked-steps" class="worked-steps" aria-live="polite"></ol><button type="button" class="text-btn step-back" id="step-back" hidden>← Previous step</button><button class="btn primary" id="reveal-step">Show the next step</button><button class="text-btn" id="reveal-all">Show all steps</button><div class="prerequisite"><span class="eyebrow">Helpful to know</span><p id="prerequisite-text"></p><div id="prerequisite-links" class="support-bridge"></div><details class="math-glossary"><summary>Quick math words</summary><dl id="math-glossary"></dl></details></div></section><section id="practice-panel" role="tabpanel" aria-labelledby="mode-practice" hidden><p class="eyebrow">Your turn</p><h2 id="practice-question"></h2><p class="subtle" id="practice-guidance">Use the visual to reason it out. Enter a decimal if needed.</p><button type="button" class="text-btn" id="practice-calculator-open" aria-haspopup="dialog">Open scientific calculator ↗</button><form id="answer-form"><label for="answer-input" id="answer-label">Your answer</label><div class="answer-row"><input id="answer-input" type="text" inputmode="decimal" autocomplete="off" spellcheck="false"><button type="submit" class="btn primary">Check</button></div></form><div id="answer-feedback" class="answer-feedback" aria-live="polite" aria-atomic="true"></div><button class="text-btn" id="show-hint" aria-expanded="false" aria-controls="practice-hint">Give me a hint</button><p class="hint" id="practice-hint" hidden></p><div class="practice-actions"><button class="btn" id="new-problem">New challenge ↻</button><button class="text-btn" id="show-practice-solution">See the reasoning</button></div><div class="subtle progress-explanation">“Practiced” means you answered one check correctly here. It does not certify mastery.</div></section></div></div><div class="lesson-bottom"><p>Changing a control updates the model, explanation, and practice together.</p><button class="text-btn" id="next-bottom">Explore another idea →</button></div></section>
 <dialog id="coverage-dialog"><div class="dialog-heading"><h2>What’s inside Math Atlas</h2><button class="text-btn" id="coverage-close" aria-label="Close coverage">✕</button></div><p>A U.S. middle and high school topic map, organized by course rather than assuming a fixed high school grade. Every catalog entry is an interactive lesson. The advanced collection offers introductions to selected precalculus and calculus ideas.</p><div id="coverage-list"></div><h3>What this edition does not yet cover fully</h3><p>Extended proofs and constructions; multi-step word-problem sequences; full polynomial and rational-expression operations; comprehensive statistical inference; differential equations and infinite series; assessments and complete state-by-state standards alignment.</p><h3>Designed for understanding</h3><p>Controls change real calculations. Graphs label their axes and use meaningful scales. Hints explain the principle behind a step. Practice results stay in this browser; no student account is required. Approximate answers use a stated rounding tolerance.</p><p class="subtle">Topic planning references: <a href="https://www.thecorestandards.org/Math/Content/6/introduction/" target="_blank" rel="noreferrer">middle school standards</a>, <a href="https://www.thecorestandards.org/Math/Content/HSF/" target="_blank" rel="noreferrer">high school functions</a>, and <a href="https://www.thecorestandards.org/Math/Content/HSG/" target="_blank" rel="noreferrer">high school geometry</a>. These inform scope; this library has not been certified as standards-aligned.</p><button class="text-btn" id="clear-progress">Clear this browser’s practice progress</button><p class="subtle" id="storage-status"></p></dialog>
 <dialog id="visual-dialog" aria-labelledby="expanded-title"><div class="dialog-heading"><h2 id="expanded-title">Explore the diagram</h2><button class="text-btn" id="visual-close" aria-label="Close enlarged diagram">Close ✕</button></div><div id="expanded-visual"></div><p id="expanded-caption"></p></dialog></main><footer><a class="brand footer-brand" href="#library">math<span class="brand-light">atlas</span></a><span>Visual lessons · Guided examples · Room to explore</span><span><a href="about.html">About & how to use</a> · <a href="https://github.com/dancinglumberjack/math-atlas/issues/new/choose">Help make it better ↗</a></span></footer><script>window.AnatomyKit=(()=>{const AZIMUTH = 45;
 const ELEVATION = 30;
@@ -2296,10 +2300,194 @@ return {dot3,add3,sub3,mul3,len3,unit3,cross3,lerp3,viewOf,lightOf,scaleOf,bandO
   Object.defineProperty(window.MathAtlasIsometric,'inspect',{value:scene,enumerable:false});
 })();
 
+window.AtlasPetModel=(()=>{
+/** Original Math Atlas companions. No timers, penalties, purchases with money, or network calls. */
+const catalog = Object.freeze([
+  { id: 'pip', type: 'pet', name: 'Pip', cost: 0, description: 'A squirrel with excellent questions and absolutely no indoor voice.', variant: 'squirrel' },
+  { id: 'bea', type: 'pet', name: 'Bea', cost: 55, description: 'A gentle bird who collects interesting pebbles. Every pebble is interesting.', variant: 'bird' },
+  { id: 'noodle', type: 'pet', name: 'Noodle', cost: 80, description: 'An axolotl with six fancy frills and one very tiny idea at a time.', variant: 'axolotl' },
+  { id: 'moss', type: 'pet', name: 'Moss', cost: 70, description: 'A turtle who takes the scenic route, including on a straight line.', variant: 'turtle' },
+  { id: 'meadow', type: 'habitat', name: 'Pocket Meadow', cost: 0, description: 'A little patch of sunshine. Room for a friend and an unnecessarily large leaf.', variant: 'meadow' },
+  { id: 'treehouse', type: 'habitat', name: 'Treehouse Nook', cost: 40, description: 'A cozy woodland room with a round window and a very good view.', variant: 'treehouse' },
+  { id: 'observatory', type: 'habitat', name: 'Moonlit Lookout', cost: 65, description: 'A quiet place to watch the stars and ask enormous questions.', variant: 'observatory' },
+  { id: 'fern-case', type: 'case', name: 'Fern Case', cost: 0, description: 'A soft green frame for your pocket-sized world.', variant: 'fern' },
+  { id: 'peach-case', type: 'case', name: 'Peach Case', cost: 25, description: 'A warm coral frame with a sprinkle of sunshine.', variant: 'peach' },
+  { id: 'midnight-case', type: 'case', name: 'Midnight Case', cost: 40, description: 'Deep blue, tiny stars, big explorer energy.', variant: 'midnight' },
+  { id: 'star-charm', type: 'charm', name: 'Little Star Keychain', cost: 0, description: 'A friendly star that comes along on every adventure.', variant: 'star' },
+  { id: 'leaf-charm', type: 'charm', name: 'Lucky Leaf Keychain', cost: 12, description: 'A leaf for the explorer who likes taking the long way home.', variant: 'leaf' },
+  { id: 'moon-charm', type: 'charm', name: 'Sleepy Moon Keychain', cost: 18, description: 'A crescent moon. It is not sleepy; it is thinking with its eyes closed.', variant: 'moon' },
+  { id: 'berries', type: 'food', name: 'Berry Bowl', cost: 5, description: 'Three imaginary berries. One imaginary delighted friend.', variant: 'berries' },
+  { id: 'crunch', type: 'food', name: 'Star Crunch', cost: 8, description: 'A little crunchy constellation for your companion.', variant: 'crunch' },
+  { id: 'toast', type: 'food', name: 'Tiny Toast', cost: 10, description: 'Toast so tiny that even the crumbs have crumbs.', variant: 'toast' }
+].map(item => Object.freeze(item)));
+
+const starters = ['pip', 'meadow', 'fern-case', 'star-charm'];
+const defaults = { pet: 'pip', habitat: 'meadow', case: 'fern-case', charm: 'star-charm' };
+const slots = ['pet', 'habitat', 'case', 'charm'];
+const byId = new Map(catalog.map(item => [item.id, item]));
+const integer = (value, fallback, ceiling) => typeof value === 'number' && Number.isFinite(value)
+  ? Math.min(ceiling, Math.max(0, Math.floor(value))) : fallback;
+
+function createPetState() {
+  return { coins: 20, owned: [...starters], food: {}, equipped: { ...defaults }, careCount: 0 };
+}
+
+function normalizePetState(value) {
+  const input = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+  const owned = [...new Set([...starters, ...(Array.isArray(input.owned) ? input.owned : [])])]
+    .filter(id => byId.has(id) && byId.get(id).type !== 'food');
+  const equipped = {};
+  for (const slot of slots) {
+    const id = input.equipped?.[slot];
+    equipped[slot] = owned.includes(id) && byId.get(id)?.type === slot ? id : defaults[slot];
+  }
+  const food = {};
+  for (const item of catalog.filter(item => item.type === 'food')) {
+    const count = integer(input.food?.[item.id], 0, 99);
+    if (count > 0) food[item.id] = count;
+  }
+  return {
+    coins: integer(input.coins, 20, 10000000), owned, food, equipped,
+    careCount: integer(input.careCount, 0, 1000000)
+  };
+}
+
+function purchase(value, itemId) {
+  const state = normalizePetState(value);
+  const item = byId.get(itemId);
+  if (!item) return { ok: false, state, message: 'That item is not in this shop.' };
+  if (item.type !== 'food' && state.owned.includes(item.id)) {
+    return { ok: false, state, message: 'You already own ' + item.name + '. You can use it from Your things.' };
+  }
+  if (item.type === 'food' && (state.food[item.id] || 0) >= 99) {
+    return { ok: false, state, message: 'You have a full supply of ' + item.name + '.' };
+  }
+  if (state.coins < item.cost) {
+    return { ok: false, state, message: 'You need ' + (item.cost - state.coins) + ' more coins for ' + item.name + '. Your current things are always yours.' };
+  }
+  state.coins -= item.cost;
+  if (item.type === 'food') state.food[item.id] = (state.food[item.id] || 0) + 1;
+  else state.owned.push(item.id);
+  return { ok: true, state, message: item.name + ' is yours! ' + (item.type === 'food' ? 'Find it in Care.' : 'Choose it from Your things.') };
+}
+
+function equip(value, slot, itemId) {
+  const state = normalizePetState(value);
+  const item = byId.get(itemId);
+  if (!slots.includes(slot) || item?.type !== slot || !state.owned.includes(itemId)) {
+    return { ok: false, state, message: 'Choose something you own for this part of your companion’s world.' };
+  }
+  state.equipped[slot] = itemId;
+  return { ok: true, state, message: item.name + ' is now selected.' };
+}
+
+function feed(value, itemId) {
+  const state = normalizePetState(value);
+  const item = byId.get(itemId);
+  if (item?.type !== 'food' || !(state.food[itemId] > 0)) {
+    return { ok: false, state, message: 'Choose a snack you own. Your friend is happy to just hang out, too.' };
+  }
+  state.food[itemId]--;
+  if (!state.food[itemId]) delete state.food[itemId];
+  state.careCount = Math.min(1000000, state.careCount + 1);
+  const name = byId.get(state.equipped.pet).name;
+  const cheers = {
+    berries: name + ' says: “Berry good choice!” A tiny happy dance follows.',
+    crunch: name + ' says: “A snack of astronomical proportions!” Crunch. Crunch.',
+    toast: name + ' says: “I would like to propose a toast. This toast.”'
+  };
+  return { ok: true, state, message: cheers[itemId] };
+}
+
+return Object.freeze({catalog,createPetState,normalizePetState,purchase,equip,feed});})();
+window.AtlasJourneyModel=(()=>{const {createPetState,normalizePetState}=window.AtlasPetModel;
+
+const JOURNEY_KEY = 'math-atlas-journey-v1';
+const bands = ['pre-k', 'early', 'elementary', 'middle', 'high', 'college'];
+const themes = ['garden', 'workshop', 'studio', 'observatory'];
+const plain = value => value && typeof value === 'object' && !Array.isArray(value);
+const clone = value => JSON.parse(JSON.stringify(value));
+const bounded = (value, min, max, fallback) => Number.isFinite(Number(value)) ? Math.min(max, Math.max(min, Number(value))) : fallback;
+const validId = value => typeof value === 'string' && /^[a-z][a-z0-9-]{0,79}$/.test(value);
+
+function initialJourney() {
+  return { version: 1, completed: {}, lessonPractice: {}, inProgress: null, preferences: { calm: false, rewards: true, theme: 'garden', bandId: 'middle' }, weeklyGoal: 3, pet: createPetState() };
+}
+
+function normalizeJourney(input) {
+  const base = initialJourney();
+  if (!plain(input)) return base;
+  const completed = {};
+  if (plain(input.completed)) for (const [id, entry] of Object.entries(input.completed).slice(0, 500)) {
+    if (!validId(id) || !plain(entry) || !Number.isFinite(Date.parse(entry.completedAt))) continue;
+    completed[id] = { completedAt: new Date(entry.completedAt).toISOString(), supported: Boolean(entry.supported), steps: Math.floor(bounded(entry.steps, 0, 100, 3)) };
+  }
+  const lessonPractice = {};
+  if (plain(input.lessonPractice)) for (const [id, date] of Object.entries(input.lessonPractice).slice(0, 500)) {
+    if (validId(id) && Number.isFinite(Date.parse(date))) lessonPractice[id] = new Date(date).toISOString();
+  }
+  const p = plain(input.preferences) ? input.preferences : {};
+  let inProgress = null;
+  if (plain(input.inProgress) && validId(input.inProgress.missionId)) {
+    const answers = input.inProgress.answers;
+    const manipulated = input.inProgress.manipulated;
+    // Answers are private practice data, bounded to a single short mission.
+    const safeAnswers = (plain(answers) || Array.isArray(answers)) && JSON.stringify(answers).length < 24000 ? clone(answers) : {};
+    const safeManipulated = plain(manipulated) && JSON.stringify(manipulated).length < 12000 ? clone(manipulated) : {};
+    inProgress = { missionId: input.inProgress.missionId, step: Math.floor(bounded(input.inProgress.step, 0, 100, 0)), seed: Math.floor(bounded(input.inProgress.seed, 1, 2147483646, 1)), answers: safeAnswers, manipulated: safeManipulated };
+  }
+  return { version: 1, completed, lessonPractice, inProgress, preferences: { calm: Boolean(p.calm), rewards: p.rewards !== false, theme: themes.includes(p.theme) ? p.theme : 'garden', bandId: bands.includes(p.bandId) ? p.bandId : 'middle' }, weeklyGoal: [1, 3, 5, 7].includes(Number(input.weeklyGoal)) ? Number(input.weeklyGoal) : 3, pet: normalizePetState(input.pet) };
+}
+
+function createJourney(storage, now = () => new Date()) {
+  let available = Boolean(storage), state = initialJourney();
+  const listeners = new Set();
+  try { const stored = storage?.getItem(JOURNEY_KEY); if (stored) state = normalizeJourney(JSON.parse(stored)); } catch { available = false; }
+  function refresh(notify = true) {
+    if (available) try {
+      const stored = storage.getItem(JOURNEY_KEY);
+      const next = stored ? normalizeJourney(JSON.parse(stored)) : initialJourney();
+      if (JSON.stringify(next) !== JSON.stringify(state)) {
+        state = next;
+        if (notify) for (const listener of listeners) try { listener(clone(state)); } catch {}
+      }
+    } catch { available = false; }
+    return clone(state);
+  }
+  function save(next) {
+    state = normalizeJourney(next);
+    if (available) try { storage.setItem(JOURNEY_KEY, JSON.stringify(state)); } catch { available = false; }
+    for (const listener of listeners) try { listener(clone(state)); } catch { /* A display subscriber cannot stop saving. */ }
+    return clone(state);
+  }
+  function update(partial) {
+    if (!plain(partial)) return clone(state);
+    refresh(false);
+    return save({ ...state, ...partial, preferences: { ...state.preferences, ...(plain(partial.preferences) ? partial.preferences : {}) } });
+  }
+  function completeMission(id, detail = {}) {
+    if (!validId(id)) throw new TypeError('Invalid mission');
+    refresh(false);
+    // Replays are welcome; first completion earns one stamp and one coin award.
+    if (Object.hasOwn(state.completed, id)) return update({ inProgress: null });
+    const entry = { completedAt: now().toISOString(), supported: Boolean(detail.supported), steps: detail.steps ?? 3 };
+    return update({ completed: { ...state.completed, [id]: entry }, inProgress: null, pet: { ...state.pet, coins: state.pet.coins + 15 } });
+  }
+  function completePractice(id) {
+    if (!validId(id)) throw new TypeError('Invalid lesson');
+    refresh(false);
+    if (Object.hasOwn(state.lessonPractice, id)) return clone(state);
+    return update({ lessonPractice: { ...state.lessonPractice, [id]: now().toISOString() }, pet: { ...state.pet, coins: state.pet.coins + 5 } });
+  }
+  return Object.freeze({ load: () => refresh(false), save, update, refresh, completeMission, completePractice, storageAvailable: () => available, subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); }, reset: () => save(initialJourney()) });
+}
+
+return Object.freeze({JOURNEY_KEY,initialJourney,normalizeJourney,createJourney});})();
+let atlasStorage;try{atlasStorage=window.localStorage;}catch{}window.AtlasJourney=window.AtlasJourneyModel.createJourney(atlasStorage);window.addEventListener("storage",e=>{if(e.key===window.AtlasJourneyModel.JOURNEY_KEY||e.key===null)window.AtlasJourney.refresh();});
 (function(){
  'use strict';
  const defaults={preset:'standard',size:1,font:'original',line:1.75,letters:0,words:0,paper:'cream',contrast:false,focus:false,oneStep:false,ruler:false,reduceMotion:false};
- let settings={...defaults},storageAvailable=true,guideY=180,speaking=false;
+ let settings={...defaults},storageAvailable=true,guideY=180;
  try{const saved=JSON.parse(localStorage.getItem('math-atlas-reading-v1')||'null');if(saved&&typeof saved==='object')settings={...defaults,...saved};}catch{storageAvailable=false;}
  function normalize(s){
   return {preset:['standard','dyslexia','adhd','custom'].includes(s.preset)?s.preset:'custom',size:[1,1.12,1.25,1.4].includes(Number(s.size))?Number(s.size):1,font:['original','arial','verdana','system'].includes(s.font)?s.font:'original',line:[1.65,1.75,1.9,2.1].includes(Number(s.line))?Number(s.line):1.75,letters:[0,.02,.04,.08,.12].includes(Number(s.letters))?Number(s.letters):0,words:[0,.05,.1,.16].includes(Number(s.words))?Number(s.words):0,paper:['cream','white','blue'].includes(s.paper)?s.paper:'cream',contrast:Boolean(s.contrast),focus:Boolean(s.focus),oneStep:Boolean(s.oneStep),ruler:Boolean(s.ruler),reduceMotion:Boolean(s.reduceMotion)};
@@ -2326,20 +2514,8 @@ return {dot3,add3,sub3,mul3,len3,unit3,cross3,lerp3,viewOf,lightOf,scaleOf,bandO
   else if(name==='adhd')set({...defaults,preset:'adhd',font:'system',line:1.9,focus:true,oneStep:true,reduceMotion:true});
  }
  function moveGuide(y){guideY=Math.max(45,Math.min(innerHeight-35,y));const guide=document.getElementById('reading-guide');if(guide)guide.style.top=(guideY-22)+'px';}
- function stopSpeech(){if('speechSynthesis'in window&&speaking)window.speechSynthesis.cancel();speaking=false;const button=document.getElementById('listen-lesson');if(button){button.textContent='Listen to this step';button.setAttribute('aria-pressed','false');}}
- function speak(){
-  if(speaking){stopSpeech();return;}if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window))return;
-  const step=document.querySelector('#worked-steps li:last-child'),goal=document.getElementById('lesson-goal'),why=document.getElementById('lesson-why');
-  const raw=[document.getElementById('lesson-title')?.textContent,goal?.textContent,step?'Current step. '+step.textContent:why?.textContent].filter(Boolean).join('. ');
-  const spoken=raw.replace(/²/g,' squared ').replace(/³/g,' cubed ').replace(/×/g,' times ').replace(/÷/g,' divided by ').replace(/−/g,' minus ').replace(/π/g,' pi ').replace(/√/g,' square root of ').replace(/≈/g,' approximately ').replace(/=/g,' equals ').replace(/°/g,' degrees ').replace(/≠/g,' is not equal to ');
-  const utterance=new SpeechSynthesisUtterance(spoken);utterance.lang='en-US';utterance.rate=.88;const voice=window.speechSynthesis.getVoices().find(v=>v.localService&&/^en/i.test(v.lang));if(voice)utterance.voice=voice;
-  utterance.onend=()=>{speaking=false;updateContext();};utterance.onerror=()=>{speaking=false;updateContext();const status=document.getElementById('listen-status');if(status)status.textContent='Read aloud is unavailable on this device right now.';};
-  speaking=true;window.speechSynthesis.speak(utterance);const button=document.getElementById('listen-lesson');button.textContent='Stop reading';button.setAttribute('aria-pressed','true');
- }
- function updateContext(){
-  const button=document.getElementById('listen-lesson');if(!button)return;const available='speechSynthesis'in window&&'SpeechSynthesisUtterance'in window;button.disabled=!available||document.getElementById('lesson-view').hidden;button.textContent=speaking?'Stop reading':'Listen to this step';button.setAttribute('aria-pressed',String(speaking));
-  const status=document.getElementById('listen-status');if(status&&!available)status.textContent='Your browser does not offer read aloud. Reading settings still work.';
- }
+ function stopSpeech(){if('speechSynthesis'in window)window.speechSynthesis.cancel();}
+ function updateContext(){}
  function init(){
   if(document.getElementById('reading-dialog'))return;
   const dialog=document.createElement('dialog');dialog.id='reading-dialog';dialog.setAttribute('aria-labelledby','reading-title');
@@ -2352,7 +2528,7 @@ return {dot3,add3,sub3,mul3,len3,unit3,cross3,lerp3,viewOf,lightOf,scaleOf,bandO
   ['contrast','focus','oneStep','ruler','reduceMotion'].forEach(key=>document.getElementById('reading-'+key).onchange=e=>set({[key]:e.target.checked},true));
   document.addEventListener('pointermove',e=>{if(settings.ruler&&!document.querySelector('dialog[open]'))moveGuide(e.clientY);},{passive:true});
   document.addEventListener('keydown',e=>{if(settings.ruler&&e.altKey&&(e.key==='ArrowUp'||e.key==='ArrowDown')){e.preventDefault();moveGuide(guideY+(e.key==='ArrowUp'?-24:24));}});
-  document.getElementById('listen-lesson')?.addEventListener('click',speak);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSpeech();});window.addEventListener('hashchange',stopSpeech);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSpeech();});window.addEventListener('hashchange',stopSpeech);
   apply();updateContext();
  }
  window.MathReading={init,set,getSettings:()=>({...settings}),preset,updateContext,stopSpeech};
@@ -2903,7 +3079,7 @@ function checkAnswer(e){
  if(value===null){feedback.textContent='Enter a number, a fraction such as 3/4, or e notation such as 3e-5.';return;}
  if(answerCorrect(value,model.answer,model.tolerance)){
   feedback.textContent='That’s right. '+model.steps[model.steps.length-1];feedback.classList.add('correct');
-  progress[current.id]={practiced:true};persist();$('lesson-status').textContent='✓ Practiced';$('lesson-status').classList.add('practiced');
+  progress[current.id]={practiced:true};persist();$('lesson-status').textContent='✓ Practiced';$('lesson-status').classList.add('practiced');document.dispatchEvent(new CustomEvent('atlaspractice',{detail:{id:current.id}}));
  }else{wrongAttempts++;feedback.textContent=wrongAttempts>=2?'Let’s break it down. '+model.steps[1]+' Use this step, then try again or reveal the reasoning.':'Not quite yet. '+model.hint+' Try again, or reveal the reasoning.';}
 }
 $('answer-form').addEventListener('submit',checkAnswer);
@@ -3315,4 +3491,245 @@ renderFilters();route();
   root.MathCalculator = Object.freeze({ evaluate, format, init, open });
 })(typeof window === 'undefined' ? globalThis : window);
 
-window.MathCalculator.init();</script></body></html>
+window.MathCalculator.init();
+/* Original pocket companions. All ownership stays in this browser's Journey save. */
+window.AtlasPets = (() => {
+  'use strict';
+  const model = () => window.AtlasPetModel;
+  const itemById = id => model().catalog.find(item => item.id === id);
+  const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const readJourney = () => window.AtlasJourney.load();
+  const readPet = () => model().normalizePetState(readJourney().pet);
+  let dialog, tab = 'inventory', category = 'pet', previewId = null, statusText = '', cheer = false;
+  let initialized = false, opener = null;
+
+  const palettes = {
+    'fern-case': ['#699b7b', '#d9eadb', '#3d6853'],
+    'peach-case': ['#e6a18b', '#ffded0', '#a65e52'],
+    'midnight-case': ['#4c5b83', '#d2dcf1', '#2e3e65']
+  };
+
+  function star(x, y, scale, color) {
+    return `<path transform="translate(${x} ${y}) scale(${scale})" d="M0-12 3.7-4.4 12-3.7 6 2.2 7.5 10.5 0 6.5-7.5 10.5-6 2.2-12-3.7-3.7-4.4Z" fill="${color}" stroke="#6e6540" stroke-width="1.6" stroke-linejoin="round"/>`;
+  }
+
+  function charmArt(id, x = 269, y = 102) {
+    const chain = `<path d="M${x - 15} ${y - 40}q27-19 17 14" fill="none" stroke="#b19b6a" stroke-width="6"/><path d="M${x - 15} ${y - 40}q27-19 17 14" fill="none" stroke="#f2dba1" stroke-width="3"/>`;
+    const art = id === 'leaf-charm'
+      ? `<path d="M-10 12Q-23-8 13-24Q23 12-10 12Z" fill="#9bc88c" stroke="#47725d" stroke-width="2.5"/><path d="M-12 20 9-16M-1 0-10-5M2-4 10-3" stroke="#47725d" stroke-width="2" fill="none"/>`
+      : id === 'moon-charm'
+        ? '<path d="M9-19A21 21 0 1 0 18 15C-9 18-15-7 9-19Z" fill="#efd38c" stroke="#8d754a" stroke-width="2.5"/><path d="m-8 7 5 2 4-3" fill="none" stroke="#8d754a" stroke-width="2"/>'
+        : star(0, 0, 1.7, '#f4ce72') + '<circle cx="-6" cy="0" r="1.7" fill="#5e573c"/><circle cx="6" cy="0" r="1.7" fill="#5e573c"/><path d="M-3 6q3 3 6 0" stroke="#5e573c" stroke-width="1.5" fill="none"/>';
+    return chain + `<g transform="translate(${x + 2} ${y}) rotate(9)">${art}</g>`;
+  }
+
+  function foodArt(id) {
+    if (id === 'berries') return '<path d="M-35 6q4 30 35 30T35 6Z" fill="#e7be90" stroke="#7c5e49" stroke-width="3"/><ellipse cy="6" rx="35" ry="9" fill="#fff1d4" stroke="#7c5e49" stroke-width="3"/><g fill="#d6757a" stroke="#8d525e" stroke-width="2"><circle cx="-17" cy="-5" r="11"/><circle cx="16" cy="-5" r="11"/><circle cy="-18" r="12"/></g><path d="m-4-25 4-11 6 9" fill="#77a46d" stroke="#487657" stroke-width="2"/>';
+    if (id === 'crunch') return star(-20, 0, 1.3, '#e7b965') + star(14, -18, 1.1, '#f4d68b') + star(17, 19, 1.25, '#e7b965');
+    return '<path d="M-28 28V-9q-13-10-5-24 8-12 32-12t34 12q8 14-5 24v37Z" fill="#cb8d56" stroke="#8b5f40" stroke-width="3"/><path d="M-20 20V-12q-10-8-5-16 5-9 24-9t25 9q5 8-5 16v32Z" fill="#ffe2a6"/><rect x="-8" y="-14" width="17" height="14" rx="3" fill="#f7c45d" transform="rotate(12)"/>';
+  }
+
+  function habitatArt(id) {
+    if (id === 'observatory') return '<rect x="68" y="89" width="184" height="164" rx="23" fill="#34496b"/>' + star(99, 114, .36, '#f6dfa1') + star(221, 124, .28, '#f6dfa1') + star(174, 107, .24, '#f6dfa1') + '<circle cx="220" cy="111" r="13" fill="#ead9a8"/><circle cx="226" cy="106" r="12" fill="#34496b"/><path d="M69 223q48-24 91-8t91-4v29q-94 31-182 0Z" fill="#71869a"/><path d="M88 191v-15m-8 7h16M231 186v-13m-7 6h14" stroke="#b1c9bb" stroke-width="2"/>';
+    if (id === 'treehouse') return '<rect x="68" y="89" width="184" height="164" rx="23" fill="#ecd9b2"/><path d="M83 104v123m24-123v123m106-123v123m24-123v123" stroke="#d6bb8c" stroke-width="2"/><circle cx="161" cy="132" r="27" fill="#98c6cb" stroke="#ab875c" stroke-width="8"/><path d="M161 105v54m-27-27h54" stroke="#ab875c" stroke-width="4"/><path d="M70 228q92-18 180 0v15q-91 26-180 0Z" fill="#b99a70"/><path d="M88 179v-23q17-8 25 5-11 12-25 5m0 13q-22-7-17-17 18-6 17 17" fill="#73956c" stroke="#4c7558" stroke-width="2"/>';
+    return '<rect x="68" y="89" width="184" height="164" rx="23" fill="#deeddc"/><circle cx="221" cy="117" r="17" fill="#f1d789"/><path d="M89 126q7-10 16 0 8-5 14 4H85Z" fill="#fffdf0"/><path d="M69 212q42-26 93-5t89-7v40q-93 28-182 0Z" fill="#accc9a"/><path d="M69 232q65-16 119 0t63-5v17q-94 24-182 0Z" fill="#89b58a"/><path d="m91 219 3-10 4 8m123 7 4-10 4 9m-19-4 2-7" stroke="#4c815b" stroke-width="2" fill="none"/><circle cx="106" cy="221" r="3" fill="#f6ebaf"/><circle cx="233" cy="216" r="3" fill="#f6ebaf"/>';
+  }
+
+  function petArt(id) {
+    const outline = 'stroke="#684f43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"';
+    const face = '<path d="M144 170q5-5 10 0m15-1q5-5 10 0" fill="none" stroke="#594c42" stroke-width="2.5" stroke-linecap="round"/><ellipse cx="149" cy="180" rx="3.5" ry="5" fill="#443e39"/><ellipse cx="174" cy="180" rx="3.5" ry="5" fill="#443e39"/><circle cx="150" cy="178" r="1" fill="#fff"/><circle cx="175" cy="178" r="1" fill="#fff"/><ellipse cx="138" cy="190" rx="7" ry="4" fill="#e7a08c" opacity=".8"/><ellipse cx="186" cy="190" rx="7" ry="4" fill="#e7a08c" opacity=".8"/>';
+    if (id === 'bea') return `<g ${outline}><path d="M139 219q-36 11-37-21l29-20" fill="#7fa9aa"/><path d="M135 207q-10-42 4-59 23-27 48-3 24 28-3 65Z" fill="#8eb9b9"/><path d="M149 149q11-16 20 0" fill="#e8f0d5" stroke="none"/><ellipse cx="162" cy="198" rx="24" ry="28" fill="#e7efdb" stroke="none"/><path d="M186 181q25 4 21 28-17 3-25-9" fill="#6f9c9e"/><path d="m149 223-4 10m2-5-8 4m36-8 4 9m-2-5 8 4" fill="none"/><path d="M157 139q-14-15-4-20l9 17q2-25 12-21l-6 24" fill="#8eb9b9"/><path d="m153 190 10-7 10 7-10 8Z" fill="#e4b47b"/></g>${face}`;
+    if (id === 'noodle') return `<g stroke="#9d666e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M178 213q44 20 32-10-14 17-25-6" fill="#df9da5"/><path d="M144 201q-12 24 3 26h27q17-6 0-28" fill="#efb6bb"/><path d="m143 216-11 12 16-1m27-11 11 12-16-1" fill="#e7a7ad"/><path d="m131 165-20-15m17 25-23 2m26 6-19 15m81-33 20-15m-18 25 23 2m-26 6 19 15" fill="none" stroke="#c9818d" stroke-width="7"/><path d="m114 151-4-9m-3 33-8-4m15 25-8 2m108-48 5-8m-2 34 8-4m-14 24 8 2" fill="none" stroke="#e4a0ab" stroke-width="4"/><path d="M126 178q-3-31 35-31 39 0 38 31 0 32-36 32-37 0-37-32Z" fill="#f3c3c6"/><path d="M155 194q8 8 16 0" fill="none"/></g>${face}`;
+    if (id === 'moss') return `<g ${outline}><path d="m126 210-10 14 16-3m45-5 13 10 3-10" fill="#a2b37c"/><ellipse cx="157" cy="202" rx="38" ry="27" fill="#75946a"/><path d="m126 203 18-17 24 4 17 15-8 16m-33-35 1 25-17 8m17-8 22 13m-22-13 24-21" fill="none" stroke="#4d735c"/><path d="M145 180q-11-32 15-38 31-7 37 21 7 26-23 32" fill="#bac994"/><path d="M132 222h18m22 1h16" fill="none"/><path d="M157 190q7 5 13-1" fill="none" stroke-width="2"/></g>${face}`;
+    return `<g ${outline}><path d="M137 211q-32 21-38-8-8-33 17-49 22-15 30 7-25-3-29 15-1 16 17 14" fill="#bf875d"/><path d="M118 156q-16 11-16 31" fill="none" stroke="#dba87c" stroke-width="7"/><path d="M144 200q-10 25 4 28h28q12-9-3-29" fill="#c98b60"/><ellipse cx="161" cy="212" rx="14" ry="16" fill="#f4d7ad" stroke="none"/><path d="m145 226-12 5h22m18-5 13 5h-20" fill="#bd8058"/><path d="m142 157-8-27q9-11 19 18m20 0 12-20q15-1 8 18l-9 15" fill="#c98b60"/><path d="m141 142 3 10m39-11-4 11" fill="none" stroke="#e7bb94" stroke-width="4"/><path d="M129 177q-1-28 33-29 35 0 35 29 0 30-35 31-34-1-33-31Z" fill="#dba171"/><path d="M143 190q19-14 38 0-3 15-19 16-15-1-19-16Z" fill="#f6dcb4" stroke="none"/><path d="m158 190 4 4 5-4" fill="#684f43" stroke-width="2"/><path d="M162 194v8m-6-4q6 8 13 0" fill="none" stroke-width="2"/><path d="M158 201h8v7h-8Z" fill="#fff6dd" stroke-width="1.5"/><path d="m143 211-10-11m46 11 10-10" fill="none" stroke-width="7"/></g>${face}`;
+  }
+
+  function renderBuddy(options = {}) {
+    const state = model().normalizePetState(options.state || readPet());
+    const [base, light, dark] = palettes[state.equipped.case] || palettes['fern-case'];
+    const label = options.label || itemById(state.equipped.pet).name + ' in ' + itemById(state.equipped.habitat).name + ', with ' + itemById(state.equipped.case).name + ' and ' + itemById(state.equipped.charm).name;
+    const size = Number.isFinite(options.size) ? ` style="width:${Math.max(60, Math.min(600, options.size))}px"` : '';
+    return `<svg class="pet-buddy-svg${cheer ? ' pet-cheer' : ''}"${size} viewBox="0 0 320 340" role="img" aria-label="${esc(label)}" xmlns="http://www.w3.org/2000/svg"><ellipse cx="159" cy="319" rx="100" ry="9" fill="#203c31" opacity=".10"/><path d="M135 53v-19q0-20 23-20t23 20v19" fill="none" stroke="${dark}" stroke-width="12"/><path d="M135 53v-19q0-20 23-20t23 20v19" fill="none" stroke="${light}" stroke-width="5"/><rect x="45" y="46" width="230" height="265" rx="43" fill="${dark}"/><rect x="45" y="40" width="230" height="265" rx="43" fill="${base}" stroke="${dark}" stroke-width="3"/><path d="M65 79q0-20 23-21h134" stroke="${light}" stroke-width="5" stroke-linecap="round" fill="none"/><rect x="61" y="82" width="198" height="178" rx="30" fill="${dark}"/>${habitatArt(state.equipped.habitat)}<ellipse cx="161" cy="230" rx="46" ry="7" fill="#355b4a" opacity=".14"/><g class="pet-character">${petArt(state.equipped.pet)}</g><rect x="72" y="266" width="96" height="24" rx="12" fill="${light}"/><text x="120" y="282" text-anchor="middle" fill="${dark}" font-size="11" font-family="system-ui,sans-serif" font-weight="700">${esc(itemById(state.equipped.pet).name.toUpperCase())}</text><circle cx="213" cy="277" r="9" fill="${light}" stroke="${dark}" stroke-width="2"/><circle cx="239" cy="277" r="9" fill="${light}" stroke="${dark}" stroke-width="2"/>${charmArt(state.equipped.charm)}</svg>`;
+  }
+
+  function icon(item, state) {
+    if (item.type === 'food') return `<svg class="pet-item-art" viewBox="-58 -57 116 114" aria-hidden="true">${foodArt(item.id)}</svg>`;
+    if (item.type === 'charm') return `<svg class="pet-item-art" viewBox="-58 -57 116 114" aria-hidden="true">${charmArt(item.id, -2, 10)}</svg>`;
+    const preview = model().normalizePetState(state);
+    // A preview never changes ownership or the saved selection.
+    preview.equipped[item.type] = item.id;
+    // renderBuddy normalizes ownership, so add this item to the temporary preview only.
+    if (!preview.owned.includes(item.id)) preview.owned.push(item.id);
+    return renderBuddy({ state: preview, label: item.name + ' preview' });
+  }
+
+  function inventoryMarkup(state) {
+    return `<p class="pet-section-intro">Your collection, ready whenever you are. Choose a friend and make a little world of your own.</p><div class="pet-category-tabs" role="group" aria-label="Collection category">${[['pet', 'Friends'], ['habitat', 'Habitats'], ['case', 'Cases'], ['charm', 'Keychains']].map(([id, name]) => `<button type="button" data-pet-category="${id}" aria-pressed="${category === id}">${name}</button>`).join('')}</div><div class="pet-item-grid">${model().catalog.filter(item => item.type === category && state.owned.includes(item.id)).map(item => {
+      const selected = state.equipped[item.type] === item.id;
+      return `<article class="pet-item-card">${icon(item, state)}<h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><button type="button" class="btn${selected ? '' : ' primary'}" data-pet-equip="${item.id}" ${selected ? 'disabled' : ''}>${selected ? 'Selected' : 'Choose ' + esc(item.name)}</button></article>`;
+    }).join('')}</div><p class="pet-soft-note">Want another friend or a new look? Visit the shop. Everything here uses pretend coins earned by learning.</p>`;
+  }
+
+  function shopMarkup(state) {
+    const item = itemById(previewId);
+    const preview = item ? `<section class="pet-purchase-preview" aria-labelledby="pet-preview-title"><div class="pet-preview-art">${icon(item, state)}</div><div><p class="pet-kicker">Take a look first</p><h3 id="pet-preview-title" tabindex="-1">${esc(item.name)}</h3><p>${esc(item.description)}</p><p class="pet-price"><strong>${item.cost} coins</strong> · Your balance: ${state.coins}</p><p class="pet-purchase-note">${item.type === 'food' ? 'Adds one snack. Sharing it with your friend uses that snack.' : 'Yours to keep. Change your selection any time.'}</p><div class="pet-confirm-actions"><button type="button" class="btn primary" data-pet-buy="${item.id}" ${state.coins < item.cost || (item.type === 'food' && (state.food[item.id] || 0) >= 99) ? 'disabled' : ''}>Buy ${esc(item.name)} for ${item.cost} coins</button><button type="button" class="btn" data-pet-cancel>Keep browsing</button></div>${state.coins < item.cost ? `<p class="pet-afford-note">${item.cost - state.coins} more coins needed. Your friend is happy while you explore.</p>` : ''}</div></section>` : '';
+    return `<p class="pet-section-intro">Finish a new math mission to earn 15 coins. No real money, mystery boxes, timers, or rush. Your friend never needs you to buy anything.</p>${preview}<div class="pet-category-tabs" role="group" aria-label="Shop category">${[['pet', 'Friends'], ['habitat', 'Habitats'], ['case', 'Cases'], ['charm', 'Keychains'], ['food', 'Snacks']].map(([id, name]) => `<button type="button" data-pet-category="${id}" aria-pressed="${category === id}">${name}</button>`).join('')}</div><div class="pet-item-grid">${model().catalog.filter(item => item.type === category).map(item => {
+      const owned = item.type !== 'food' && state.owned.includes(item.id);
+      return `<article class="pet-item-card">${icon(item, state)}<h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><div class="pet-card-bottom"><span class="pet-price">${owned ? 'In your collection' : item.cost + ' coins'}${item.type === 'food' ? ` · ${state.food[item.id] || 0} owned` : ''}</span><button type="button" class="btn" data-pet-preview="${item.id}" ${owned ? 'disabled' : ''}>${owned ? 'Owned' : 'Preview ' + esc(item.name)}</button></div></article>`;
+    }).join('')}</div>`;
+  }
+
+  function careMarkup(state) {
+    const name = itemById(state.equipped.pet).name;
+    return `<p class="pet-section-intro">${esc(name)} is always happy to see you. Snacks are just for fun. There is no hunger meter, and taking a break never changes your friend.</p><div class="pet-item-grid">${model().catalog.filter(item => item.type === 'food').map(item => `<article class="pet-item-card">${icon(item, state)}<h3>${esc(item.name)}</h3><p>${esc(item.description)}</p><p class="pet-price">${state.food[item.id] || 0} in your snack bag</p><button type="button" class="btn primary" data-pet-feed="${item.id}" ${state.food[item.id] ? '' : 'disabled'}>Share ${esc(item.name)}</button></article>`).join('')}</div><button type="button" class="text-btn pet-snack-shop" data-pet-snacks>Visit the snack shop ↗</button><p class="pet-soft-note">Snacks shared: ${state.careCount}. There is nothing you need to keep up with.</p>`;
+  }
+
+  function render() {
+    if (!initialized) return;
+    const journey = readJourney(), state = model().normalizePetState(journey.pet);
+    const mature = ['middle', 'high', 'college'].includes(journey.preferences?.bandId);
+    const calm = !!journey.preferences?.calm;
+    dialog.classList.toggle('pet-mature', mature);
+    dialog.classList.toggle('pet-calm', calm);
+    const name = itemById(state.equipped.pet).name;
+    dialog.querySelector('#pet-coin-count').textContent = state.coins + ' coins';
+    dialog.querySelector('#pet-buddy-preview').innerHTML = renderBuddy();
+    dialog.querySelector('#pet-buddy-name').textContent = name + '’s little world';
+    const storageAvailable = typeof window.AtlasJourney.storageAvailable === 'function' ? window.AtlasJourney.storageAvailable() : window.AtlasJourney.storageAvailable;
+    dialog.querySelector('#pet-storage-note').hidden = storageAvailable !== false;
+    dialog.querySelector('#pet-quiet-note').hidden = journey.preferences?.rewards !== false;
+    dialog.querySelectorAll('[data-pet-tab]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.petTab === tab));
+    });
+    dialog.querySelector('#pet-panel-title').textContent = { shop: 'Companion shop', inventory: 'Your things', care: 'Spend a little time together' }[tab];
+    dialog.querySelector('#pet-panel-content').innerHTML = tab === 'shop' ? shopMarkup(state) : tab === 'care' ? careMarkup(state) : inventoryMarkup(state);
+    dialog.querySelector('#pet-status').textContent = statusText;
+    document.querySelectorAll('#pet-wallet,[data-pet-wallet]').forEach(host => { host.textContent = state.coins + ' coins'; });
+    document.querySelectorAll('[data-pet-buddy]').forEach(host => { host.innerHTML = renderBuddy(); });
+    document.querySelectorAll('[data-pet-reward]').forEach(host => { host.hidden = journey.preferences?.rewards === false; });
+  }
+
+  function focusAfter(selector) {
+    const node = dialog.querySelector(selector);
+    if (node) { node.focus(); node.scrollIntoView?.({ block: 'nearest' }); }
+  }
+
+  function applyResult(result) {
+    statusText = result.message;
+    if (result.ok) window.AtlasJourney.update({ pet: result.state });
+    render();
+    focusAfter('#pet-status');
+  }
+
+  function onAction(event) {
+    const button = event.target.closest('button');
+    if (!button || !dialog.contains(button)) return;
+    if (button.hasAttribute('data-pet-close')) { dialog.close(); return; }
+    if (button.dataset.petTab) {
+      tab = button.dataset.petTab; previewId = null; statusText = '';
+      if (tab === 'inventory' && category === 'food') category = 'pet';
+      render(); focusAfter('#pet-panel-title'); return;
+    }
+    if (button.dataset.petCategory) {
+      category = button.dataset.petCategory; previewId = null;
+      render(); focusAfter(`[data-pet-category="${category}"]`); return;
+    }
+    if (button.dataset.petPreview) {
+      previewId = button.dataset.petPreview;
+      render(); focusAfter('#pet-preview-title'); return;
+    }
+    if (button.hasAttribute('data-pet-cancel')) {
+      const previous = previewId; previewId = null;
+      render(); focusAfter(`[data-pet-preview="${previous}"]`); return;
+    }
+    if (button.dataset.petBuy) {
+      if (button.dataset.petBuy !== previewId) return;
+      const result = model().purchase(readPet(), button.dataset.petBuy);
+      if (result.ok) previewId = null;
+      applyResult(result); return;
+    }
+    if (button.dataset.petEquip) {
+      const item = itemById(button.dataset.petEquip);
+      if (item) applyResult(model().equip(readPet(), item.type, item.id));
+      return;
+    }
+    if (button.dataset.petFeed) {
+      const result = model().feed(readPet(), button.dataset.petFeed);
+      cheer = result.ok;
+      applyResult(result);
+      if (result.ok) window.setTimeout(() => {
+        cheer = false;
+        document.querySelectorAll('.pet-cheer').forEach(svg => svg.classList.remove('pet-cheer'));
+      }, 1200);
+      return;
+    }
+    if (button.hasAttribute('data-pet-snacks')) {
+      tab = 'shop'; category = 'food'; previewId = null; statusText = '';
+      render(); focusAfter('#pet-panel-title');
+    }
+  }
+
+  function open(options = {}) {
+    if (!initialized) init();
+    if (!initialized) return;
+    opener = document.activeElement;
+    if (options.tab && ['shop', 'inventory', 'care'].includes(options.tab)) tab = options.tab;
+    previewId = null; statusText = '';
+    render();
+    if (!dialog.open) dialog.showModal();
+    focusAfter('#pet-close');
+  }
+
+  function init() {
+    if (initialized || !window.AtlasJourney || !window.AtlasPetModel) return;
+    initialized = true;
+    dialog = document.createElement('dialog');
+    dialog.id = 'pets-dialog';
+    dialog.className = 'pets-dialog';
+    dialog.setAttribute('aria-labelledby', 'pet-dialog-title');
+    dialog.innerHTML = `<div class="pet-dialog-heading"><div><p class="pet-kicker">A little company for the journey</p><h2 id="pet-dialog-title">Pocket companions</h2></div><button type="button" class="text-btn" id="pet-close" data-pet-close aria-label="Close pocket companions">Close ✕</button></div><div class="pet-wallet-row"><span id="pet-coin-count" class="pet-wallet"></span><span>Earned through math. Yours to spend.</span></div><p id="pet-storage-note" class="pet-storage-note" hidden>Your browser is not saving right now. You can still explore, but this collection will reset when you leave.</p><p id="pet-quiet-note" class="pet-storage-note" hidden>Rewards are hidden in your learning view. You can still visit your companion here.</p><div class="pet-home"><div id="pet-buddy-preview"></div><div class="pet-home-copy"><h3 id="pet-buddy-name"></h3><p>A friend to explore with. Always glad you’re here. Always fine when you take a break.</p><p>New friends, habitats, cases, and keychains are yours to keep. Try a look before you spend your coins.</p></div></div><div class="pet-main-tabs" role="group" aria-label="Companion activities"><button type="button" data-pet-tab="inventory" aria-pressed="true">Your things</button><button type="button" data-pet-tab="shop" aria-pressed="false">Shop</button><button type="button" data-pet-tab="care" aria-pressed="false">Care</button></div><p id="pet-status" class="pet-status" role="status" aria-live="polite" tabindex="-1"></p><section aria-labelledby="pet-panel-title"><h3 id="pet-panel-title" class="pet-panel-title" tabindex="-1"></h3><div id="pet-panel-content"></div></section><p class="pet-footer-note">Saved only in this browser. There are no real-money purchases and no timers to keep up with.</p>`;
+    document.body.appendChild(dialog);
+    dialog.addEventListener('click', onAction);
+    dialog.addEventListener('close', () => {
+      if (opener?.isConnected) opener.focus();
+    });
+    document.addEventListener('click', event => {
+      const button = event.target.closest('#pets-open,[data-open-pets]');
+      if (button) { event.preventDefault(); open(); }
+    });
+    window.AtlasJourney.subscribe(render);
+    render();
+  }
+
+  return { init, open, renderBuddy };
+})();
+
+window.AtlasPets.init();
+(function () {
+  'use strict';
+  const journey = window.AtlasJourney;
+  if (!journey) return;
+  const status = document.createElement('p');
+  status.id = 'library-reward-message';
+  status.className = 'library-reward-message';
+  status.setAttribute('role', 'status');
+  status.hidden = true;
+  document.getElementById('practice-panel')?.append(status);
+  function refresh() {
+    const state = journey.load();
+    const coins = document.getElementById('library-coins');
+    if (coins) coins.textContent = state.preferences.rewards ? ' · ' + state.pet.coins + ' coins' : '';
+  }
+  document.addEventListener('atlaspractice', event => {
+    const id = event.detail?.id;
+    if (!id) return;
+    const first = !journey.load().lessonPractice[id];
+    const state = journey.completePractice(id);
+    status.hidden = !(first && state.preferences.rewards);
+    status.textContent = first ? 'A new idea practiced! +5 coins for your collection. Hints and retries are always welcome.' : '';
+  });
+  window.addEventListener('hashchange', () => { status.hidden = true; });
+  journey.subscribe(refresh);
+  refresh();
+})();
+</script></body></html>

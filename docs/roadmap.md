@@ -2,6 +2,14 @@
 
 Math Atlas currently offers 80 interactive lessons in nine collections. This roadmap describes useful directions, not promised releases or completed features. Feedback and small contributions help decide what comes next.
 
+## Student adventure comes first
+
+The student release adds selected missions across six learning stages, original woodland companions, visual challenges, and optional local rewards. Younger learners use game interactions; later stages connect the same approach with typed answers, equations, and graphs. The [adventure guide](adventure.md) explains the current scope and saved progress.
+
+The next priority is to observe whether students understand the models, can use the controls independently, and can apply an idea in a different problem. Expand content and refine rewards from that feedback. Clocks, number sense, fractions, geometry, algebra, and introductory college explorations need continued student and educator review before any claim of complete curriculum coverage.
+
+Teacher dashboards, accounts, classroom assignments, shared student records, and hosted progress services are deliberately deferred while the student experience is tested. No classroom backend is included in this release.
+
 ## Help students carry an idea into a new problem
 
 - **Guided word problems:** connect a story to a diagram, identify quantities and units, build an equation, and check whether the answer makes sense.
@@ -28,7 +36,6 @@ The typed-equation helper is intentionally limited to the documented `ax + b = c
 - Review lessons with students, educators, keyboard users, and screen-reader users.
 - Improve descriptions of diagrams and alternative representations.
 - Refine narrow-screen layouts, reading settings, contrast, and reduced-motion behavior.
-- Review optional mathematical speech across browsers and voices.
 - Add reviewed translations without losing mathematical precision.
 - Map lessons to specific standards with clear evidence and educator review before claiming alignment.
 

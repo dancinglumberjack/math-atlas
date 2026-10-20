@@ -17,7 +17,7 @@ export function createPreviewServer({ directory = root, basePath = '' } = {}) {
       }
       path = path.replace(/^\/+/, '') || 'index.html';
       // A local preview exposes the public site, never .git, dependencies, or source.
-      if (!['index.html', 'about.html', 'math-atlas-github-pages/index.html'].includes(path) && !path.startsWith('assets/')) { response.writeHead(404); response.end('Not found'); return; }
+      if (!['index.html', 'adventure.html', 'about.html', 'math-atlas-github-pages/index.html'].includes(path) && !path.startsWith('assets/')) { response.writeHead(404); response.end('Not found'); return; }
       const target = resolve(directory, path);
       if (!target.startsWith(resolve(directory) + sep)) { response.writeHead(403); response.end(); return; }
       const body = await readFile(target);

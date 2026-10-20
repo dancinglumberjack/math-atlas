@@ -8,7 +8,7 @@ const destination = resolve(root, 'dist');
 if (dirname(destination) !== root) throw new Error('Refusing to clean outside the project build directory.');
 rmSync(destination, { recursive: true, force: true });
 mkdirSync(destination, { recursive: true });
-for (const name of ['index.html', 'about.html', '.nojekyll', 'assets']) {
+for (const name of ['index.html', 'adventure.html', 'about.html', '.nojekyll', 'assets']) {
   if (existsSync(resolve(root, name))) cpSync(resolve(root, name), resolve(root, 'dist', name), { recursive: true });
 }
 const legacy = resolve(root, 'math-atlas-github-pages/index.html');

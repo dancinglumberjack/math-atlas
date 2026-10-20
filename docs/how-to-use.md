@@ -79,7 +79,7 @@ Open **Reading support**. Choose a starting preset, then change individual setti
 
 These labels describe presentation options, not a diagnosis or guaranteed benefit. A student can use either preset or any combination of settings.
 
-With the reading guide enabled, move your pointer to place the guide over a line. **Alt + ↑ / ↓** also moves it. **Listen to this step** uses the browser's speech feature when available. Pronunciation of mathematical notation may vary, so refer to the written equation alongside it.
+With the reading guide enabled, move your pointer to place the guide over a line. **Alt + ↑ / ↓** also moves it.
 
 Use **Reset to standard** to restore the original presentation. Choices are remembered in the same browser when storage is available.
 
@@ -102,6 +102,5 @@ The library covers major topics but is not a complete, certified standards-align
 - **The hosted link is unavailable:** GitHub Pages may still need enabling or deploying. A downloaded `index.html` can be opened directly in a modern browser.
 - **A typed equation is rejected:** check the supported form and integer ranges above.
 - **A practice answer is rejected:** follow the rounding guidance and enter a number or simple fraction. Use the calculator for expressions such as `sqrt(2)`, then copy its numeric result.
-- **Read aloud is unavailable:** try the device's browser speech support or use the written steps; speech is optional.
 - **Progress disappeared:** check that you are using the same browser profile and address and have not cleared site storage.
 - **A display or calculation looks wrong:** [report a problem](https://github.com/dancinglumberjack/math-atlas/issues/new/choose) with the lesson, control values, browser, and reproduction steps. Crop screenshots to remove personal information.

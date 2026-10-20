@@ -345,7 +345,7 @@ function checkAnswer(e){
  if(value===null){feedback.textContent='Enter a number, a fraction such as 3/4, or e notation such as 3e-5.';return;}
  if(answerCorrect(value,model.answer,model.tolerance)){
   feedback.textContent='That’s right. '+model.steps[model.steps.length-1];feedback.classList.add('correct');
-  progress[current.id]={practiced:true};persist();$('lesson-status').textContent='✓ Practiced';$('lesson-status').classList.add('practiced');
+  progress[current.id]={practiced:true};persist();$('lesson-status').textContent='✓ Practiced';$('lesson-status').classList.add('practiced');document.dispatchEvent(new CustomEvent('atlaspractice',{detail:{id:current.id}}));
  }else{wrongAttempts++;feedback.textContent=wrongAttempts>=2?'Let’s break it down. '+model.steps[1]+' Use this step, then try again or reveal the reasoning.':'Not quite yet. '+model.hint+' Try again, or reveal the reasoning.';}
 }
 $('answer-form').addEventListener('submit',checkAnswer);

@@ -1,7 +1,7 @@
 (function(){
  'use strict';
  const defaults={preset:'standard',size:1,font:'original',line:1.75,letters:0,words:0,paper:'cream',contrast:false,focus:false,oneStep:false,ruler:false,reduceMotion:false};
- let settings={...defaults},storageAvailable=true,guideY=180,speaking=false;
+ let settings={...defaults},storageAvailable=true,guideY=180;
  try{const saved=JSON.parse(localStorage.getItem('math-atlas-reading-v1')||'null');if(saved&&typeof saved==='object')settings={...defaults,...saved};}catch{storageAvailable=false;}
  function normalize(s){
   return {preset:['standard','dyslexia','adhd','custom'].includes(s.preset)?s.preset:'custom',size:[1,1.12,1.25,1.4].includes(Number(s.size))?Number(s.size):1,font:['original','arial','verdana','system'].includes(s.font)?s.font:'original',line:[1.65,1.75,1.9,2.1].includes(Number(s.line))?Number(s.line):1.75,letters:[0,.02,.04,.08,.12].includes(Number(s.letters))?Number(s.letters):0,words:[0,.05,.1,.16].includes(Number(s.words))?Number(s.words):0,paper:['cream','white','blue'].includes(s.paper)?s.paper:'cream',contrast:Boolean(s.contrast),focus:Boolean(s.focus),oneStep:Boolean(s.oneStep),ruler:Boolean(s.ruler),reduceMotion:Boolean(s.reduceMotion)};
@@ -28,20 +28,8 @@
   else if(name==='adhd')set({...defaults,preset:'adhd',font:'system',line:1.9,focus:true,oneStep:true,reduceMotion:true});
  }
  function moveGuide(y){guideY=Math.max(45,Math.min(innerHeight-35,y));const guide=document.getElementById('reading-guide');if(guide)guide.style.top=(guideY-22)+'px';}
- function stopSpeech(){if('speechSynthesis'in window&&speaking)window.speechSynthesis.cancel();speaking=false;const button=document.getElementById('listen-lesson');if(button){button.textContent='Listen to this step';button.setAttribute('aria-pressed','false');}}
- function speak(){
-  if(speaking){stopSpeech();return;}if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window))return;
-  const step=document.querySelector('#worked-steps li:last-child'),goal=document.getElementById('lesson-goal'),why=document.getElementById('lesson-why');
-  const raw=[document.getElementById('lesson-title')?.textContent,goal?.textContent,step?'Current step. '+step.textContent:why?.textContent].filter(Boolean).join('. ');
-  const spoken=raw.replace(/²/g,' squared ').replace(/³/g,' cubed ').replace(/×/g,' times ').replace(/÷/g,' divided by ').replace(/−/g,' minus ').replace(/π/g,' pi ').replace(/√/g,' square root of ').replace(/≈/g,' approximately ').replace(/=/g,' equals ').replace(/°/g,' degrees ').replace(/≠/g,' is not equal to ');
-  const utterance=new SpeechSynthesisUtterance(spoken);utterance.lang='en-US';utterance.rate=.88;const voice=window.speechSynthesis.getVoices().find(v=>v.localService&&/^en/i.test(v.lang));if(voice)utterance.voice=voice;
-  utterance.onend=()=>{speaking=false;updateContext();};utterance.onerror=()=>{speaking=false;updateContext();const status=document.getElementById('listen-status');if(status)status.textContent='Read aloud is unavailable on this device right now.';};
-  speaking=true;window.speechSynthesis.speak(utterance);const button=document.getElementById('listen-lesson');button.textContent='Stop reading';button.setAttribute('aria-pressed','true');
- }
- function updateContext(){
-  const button=document.getElementById('listen-lesson');if(!button)return;const available='speechSynthesis'in window&&'SpeechSynthesisUtterance'in window;button.disabled=!available||document.getElementById('lesson-view').hidden;button.textContent=speaking?'Stop reading':'Listen to this step';button.setAttribute('aria-pressed',String(speaking));
-  const status=document.getElementById('listen-status');if(status&&!available)status.textContent='Your browser does not offer read aloud. Reading settings still work.';
- }
+ function stopSpeech(){if('speechSynthesis'in window)window.speechSynthesis.cancel();}
+ function updateContext(){}
  function init(){
   if(document.getElementById('reading-dialog'))return;
   const dialog=document.createElement('dialog');dialog.id='reading-dialog';dialog.setAttribute('aria-labelledby','reading-title');
@@ -54,7 +42,7 @@
   ['contrast','focus','oneStep','ruler','reduceMotion'].forEach(key=>document.getElementById('reading-'+key).onchange=e=>set({[key]:e.target.checked},true));
   document.addEventListener('pointermove',e=>{if(settings.ruler&&!document.querySelector('dialog[open]'))moveGuide(e.clientY);},{passive:true});
   document.addEventListener('keydown',e=>{if(settings.ruler&&e.altKey&&(e.key==='ArrowUp'||e.key==='ArrowDown')){e.preventDefault();moveGuide(guideY+(e.key==='ArrowUp'?-24:24));}});
-  document.getElementById('listen-lesson')?.addEventListener('click',speak);document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSpeech();});window.addEventListener('hashchange',stopSpeech);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stopSpeech();});window.addEventListener('hashchange',stopSpeech);
   apply();updateContext();
  }
  window.MathReading={init,set,getSettings:()=>({...settings}),preset,updateContext,stopSpeech};
